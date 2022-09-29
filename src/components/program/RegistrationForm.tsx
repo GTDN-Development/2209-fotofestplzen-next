@@ -26,10 +26,10 @@ const workshops = [
     id: 3,
     value: "Nikon - Photowalk s Nikonem",
   },
-  {
-    id: 4,
-    value: "Peakdesign - You and me",
-  },
+  // {
+  //   id: 4,
+  //   value: "Peakdesign - You and me",
+  // },
   // {
   //   id: 5,
   //   value: "Manfrotto - Lukáš Navara - Portréty",

@@ -214,8 +214,8 @@ export default function Guests({ className = "" }: Props) {
           />
           <GuestCard
             src={"/images/hoste/fotka/peakdesign-younme-jakub-manina.jpg"}
-            alt="Peakdesign - You&me hub"
-            name="Peakdesign - You&me hub"
+            alt="Peak Design - You'N'Me hub"
+            name="Peak Design - You'N'Me hub"
             caption="Mladý fotografický pár"
             igLink={"https://www.instagram.com/younmehub/"}
             igName={"younmehub"}
