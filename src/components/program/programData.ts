@@ -241,7 +241,7 @@ export const nadvori = [
     time: "11:45 - 12:45",
     hasRegistration: true,
     isPaid: false,
-    isFull: false,
+    isFull: true,
     shopLink: "#",
   },
   {

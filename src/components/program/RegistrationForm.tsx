@@ -22,10 +22,10 @@ const workshops = [
   //   id: 2,
   //   value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
   // },
-  {
-    id: 3,
-    value: "Nikon - Photowalk s Nikonem",
-  },
+  // {
+  //   id: 3,
+  //   value: "Nikon - Photowalk s Nikonem",
+  // },
   // {
   //   id: 4,
   //   value: "Peakdesign - You and me",
