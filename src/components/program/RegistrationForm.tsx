@@ -2,7 +2,6 @@ import Alert from "@components/Alert";
 import Button from "@components/Button";
 import Checkbox from "@components/forms/Checkbox";
 import Input from "@components/forms/Input";
-import Select from "@components/forms/Select";
 import Textarea from "@components/forms/Textarea";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
@@ -13,36 +12,36 @@ type Props = {
   className?: string;
 };
 
-const workshops = [
-  {
-    id: 1,
-    value: "F22 - Michal Houdek - Fotíme motorku prakticky",
-  },
-  // {
-  //   id: 2,
-  //   value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
-  // },
-  // {
-  //   id: 3,
-  //   value: "Nikon - Photowalk s Nikonem",
-  // },
-  // {
-  //   id: 4,
-  //   value: "Peakdesign - You and me",
-  // },
-  // {
-  //   id: 5,
-  //   value: "Manfrotto - Lukáš Navara - Portréty",
-  // },
-  // {
-  //   id: 6,
-  //   value: "Dominik Beránek - Street portrét",
-  // },
-  {
-    id: 7,
-    value: "Tomáš Košňar + Leica klub - Focení na film",
-  },
-];
+// const workshops = [
+//   {
+//     id: 1,
+//     value: "F22 - Michal Houdek - Fotíme motorku prakticky",
+//   },
+//   {
+//     id: 2,
+//     value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
+//   },
+//   {
+//     id: 3,
+//     value: "Nikon - Photowalk s Nikonem",
+//   },
+//   {
+//     id: 4,
+//     value: "Peakdesign - You and me",
+//   },
+//   {
+//     id: 5,
+//     value: "Manfrotto - Lukáš Navara - Portréty",
+//   },
+//   {
+//     id: 6,
+//     value: "Dominik Beránek - Street portrét",
+//   },
+//   {
+//     id: 7,
+//     value: "Tomáš Košňar + Leica klub - Focení na film",
+//   },
+// ];
 
 export default function RegistrationForm({ className = "" }: Props) {
   // Ref
@@ -130,7 +129,7 @@ export default function RegistrationForm({ className = "" }: Props) {
         />
       </div>
 
-      <Select
+      {/* <Select
         label="Vyberte workshop"
         id="workshop"
         name="workshop"
@@ -142,7 +141,7 @@ export default function RegistrationForm({ className = "" }: Props) {
             {workshop.value}
           </option>
         ))}
-      </Select>
+      </Select> */}
 
       <Textarea
         name="message"
