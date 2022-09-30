@@ -67,7 +67,7 @@ const ProgramPage: NextPage = () => {
       </Wrapper>
 
       <Wrapper size="lg" className="pb-28 md:pb-52">
-        <div className="aspect-video w-full bg-body-100">
+        <div className="aspect-video w-full bg-body">
           {/* <img
             src="/images/mapa-arealu-2022-preview.jpg"
             alt="Mapa areálu festivalu"
