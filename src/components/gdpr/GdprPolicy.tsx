@@ -74,7 +74,7 @@ export default function GdprPolicy({
       </h3>
       <p>
         Pro více informací o cookies si přečtěte naše{" "}
-        <Link href="/cookies">
+        <Link href="/cookies" legacyBehavior passHref>
           <a>zásady používání cookies.</a>
         </Link>
       </p>

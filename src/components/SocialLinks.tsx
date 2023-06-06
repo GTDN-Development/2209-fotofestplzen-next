@@ -1,5 +1,4 @@
 import { socials } from "@configs/socials";
-import { FaFacebookF, FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
 
 type SocialLinksOptions = {
   as?: React.ElementType;
@@ -16,50 +15,19 @@ export default function SocialLinks({
   return (
     <Tag className={`${className}`} {...rest}>
       <ul className="flex gap-x-10">
-        <li>
-          <a
-            href={socials.facebook.link}
-            aria-label={socials.facebook.ariaLabel}
-            target="blank"
-            rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
-          >
-            <FaFacebookF />
-          </a>
-        </li>
-        <li>
-          <a
-            href={socials.instagram.link}
-            aria-label={socials.instagram.ariaLabel}
-            target="blank"
-            rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
-          >
-            <FaInstagram />
-          </a>
-        </li>
-        <li>
-          <a
-            href={socials.youtube.link}
-            aria-label={socials.youtube.ariaLabel}
-            target="blank"
-            rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
-          >
-            <FaYoutube />
-          </a>
-        </li>
-        <li>
-          <a
-            href={socials.spotify.link}
-            aria-label={socials.spotify.ariaLabel}
-            target="blank"
-            rel="noopener noreferrer"
-            className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
-          >
-            <FaSpotify />
-          </a>
-        </li>
+        {socials.map((social) => (
+          <li key={social.link}>
+            <a
+              href={social.link}
+              aria-label={social.ariaLabel}
+              target="blank"
+              rel="noopener noreferrer"
+              className="text-xl text-white transition-colors duration-150 ease-in-out hover:text-primary"
+            >
+              <social.icon className="h-5 w-5" />
+            </a>
+          </li>
+        ))}
       </ul>
     </Tag>
   );

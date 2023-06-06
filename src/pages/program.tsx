@@ -13,7 +13,7 @@ import { HiDownload } from "react-icons/hi";
 const ProgramPage: NextPage = () => {
   return (
     <>
-      <Seo title="Program a mapa" description="" />
+      <Seo title="Program a mapa" description="" noFollow noIndex />
       <Wrapper as={"header"} paddedContent="sm">
         <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
           Program

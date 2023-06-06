@@ -3,9 +3,13 @@ export const mainRoutes = [
     label: "Hlavní strana",
     path: "/",
   },
+  // {
+  //   label: "Program a mapa",
+  //   path: "/program",
+  // },
   {
-    label: "Program a mapa",
-    path: "/program",
+    label: "Registrace pro firmy",
+    path: "/registrace",
   },
   {
     label: "FAQ",
@@ -20,7 +24,7 @@ export const mainRoutes = [
 export const ctaMenu = [
   {
     label: "Facebook událost",
-    link: "https://www.facebook.com/events/480096767098250",
+    link: "https://www.facebook.com/events/272327748479978/",
   },
   {
     label: "+420 775 554 479",

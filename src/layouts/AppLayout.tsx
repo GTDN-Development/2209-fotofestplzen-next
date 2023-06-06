@@ -18,7 +18,7 @@ export default function AppLayout({ children }: AppShellOptions) {
       </header>
       <CookieConsentBar />
       <main id="main">
-        <div className="pointer-events-none absolute top-0 right-0 -z-10 h-screen w-screen bg-gradient-to-tr from-body via-body to-secondary opacity-25 md:w-[90vw] md:opacity-40 lg:h-[1200px] 2xl:h-[1600px]"></div>
+        <div className="pointer-events-none absolute top-0 right-0 -z-10 h-screen w-screen bg-gradient-to-tr from-body via-body to-secondary opacity-30 md:w-[90vw] md:opacity-50 lg:h-[1200px] 2xl:h-[1600px]"></div>
         {children}
       </main>
       <Footer />

@@ -18,8 +18,7 @@ const questionsAnswers = [
   {
     id: 4,
     question: "Kdy a kde bude Foto Fest probíhat?",
-    answer:
-      "1. října 2022 od 10 hodin v hlavní části DEPO2015. Vstup u kavárny.",
+    answer: "1. října 2023 od 10 hodin v Plzeňské Papírně.",
   },
   {
     id: 5,

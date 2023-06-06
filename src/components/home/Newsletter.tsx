@@ -68,7 +68,7 @@ export default function Newsletter() {
     }
   }
   return (
-    <div className="grid w-full grid-cols-1 gap-10 bg-secondary/80 py-20 px-6 sm:px-11 lg:grid-cols-2 lg:py-36">
+    <div className="grid w-full grid-cols-1 gap-10 rounded-2xl bg-secondary/80 py-20 px-6 sm:px-11 lg:grid-cols-2 lg:py-36">
       <div className="col-span-1">
         <Heading
           level={2}
@@ -117,7 +117,7 @@ export default function Newsletter() {
             className="mt-6"
           >
             * Souhlasím se{" "}
-            <Link href={"/gdpr"}>
+            <Link href={"/gdpr"} passHref legacyBehavior>
               <a className="c-link-3-a text-white outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                 zpracováním osobních údajů.
               </a>

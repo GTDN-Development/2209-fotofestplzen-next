@@ -24,8 +24,8 @@ export default function Guests({ className = "" }: Props) {
         <Tab
           className={({ selected }) =>
             selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
+              ? "flex w-64 shrink-0 flex-col gap-3 rounded-xl bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
+              : "flex w-64 shrink-0 flex-col gap-3 rounded-xl bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
           }
         >
           <HiOutlineCamera className="text-3xl text-primary lg:text-4xl" />
@@ -38,8 +38,8 @@ export default function Guests({ className = "" }: Props) {
         <Tab
           className={({ selected }) =>
             selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
+              ? "flex w-64 shrink-0 flex-col gap-3 rounded-xl bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
+              : "flex w-64 shrink-0 flex-col gap-3 rounded-xl bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
           }
         >
           <HiOutlineVideoCamera className="text-3xl text-primary lg:text-4xl" />
@@ -52,8 +52,8 @@ export default function Guests({ className = "" }: Props) {
         <Tab
           className={({ selected }) =>
             selected
-              ? "flex w-64 shrink-0 flex-col gap-3 bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
-              : "flex w-64 shrink-0 flex-col gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
+              ? "flex w-64 shrink-0 flex-col gap-3 rounded-xl bg-gray-700/50 p-5 text-left outline-none transition-colors duration-200"
+              : "flex w-64 shrink-0 flex-col gap-3 rounded-xl bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30"
           }
         >
           <HiOutlineLightningBolt className="text-3xl text-primary lg:text-4xl" />

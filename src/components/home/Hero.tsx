@@ -13,7 +13,7 @@ export default function Hero() {
             Foto fest Plzeň
           </h1>
           <span className="font-display text-base font-medium text-primary xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
-            2022
+            2023
           </span>
         </div>
         <p className="anim-slide-up reveal-delay-600 mt-2 max-w-3xl text-lg font-medium md:text-xl">
@@ -24,23 +24,23 @@ export default function Hero() {
           #fotofestplzen
         </span> */}
         <div className="mt-8 flex flex-col gap-5 md:mt-16 md:flex-row md:gap-14">
-          <div className="anim-slide-up reveal-delay-800 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-800 flex flex-col rounded-xl bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Kdy
             </span>
             <span className="block font-display text-2xl font-normal uppercase leading-tight text-primary sm:text-3xl">
-              1.10. 2022
+              1.10. 2023
             </span>
           </div>
-          <div className="anim-slide-up reveal-delay-800 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-800 flex flex-col rounded-xl bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Kde
             </span>
             <span className="block font-display text-2xl font-normal uppercase leading-tight text-primary sm:text-3xl">
-              DEPO2015, Plzeň
+              Papírna Plzeň
             </span>
           </div>
-          <div className="anim-slide-up reveal-delay-1000 flex flex-col bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
+          <div className="anim-slide-up reveal-delay-1000 flex flex-col rounded-xl bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
             <span className="block text-sm font-semibold tracking-wide">
               Vstupné
             </span>

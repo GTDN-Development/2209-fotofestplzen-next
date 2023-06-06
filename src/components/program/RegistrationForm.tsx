@@ -159,7 +159,7 @@ export default function RegistrationForm({ className = "" }: Props) {
         isRequired={true}
       >
         * Souhlasím se{" "}
-        <Link href={"/gdpr"}>
+        <Link href={"/gdpr"} passHref legacyBehavior>
           <a className="c-link-3-a text-primary outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
             zpracováním osobních údajů.
           </a>

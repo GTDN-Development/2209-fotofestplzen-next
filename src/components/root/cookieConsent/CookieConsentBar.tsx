@@ -45,7 +45,7 @@ export default function CookieConsentBar() {
         <FaCookieBite className="mb-0 text-base sm:text-lg lg:text-2xl" />
         <span className="block text-xs md:text-sm">
           Tato webová stránka používá cookies.{" "}
-          <Link href="/cookies">
+          <Link href="/cookies" passHref legacyBehavior>
             <a className="c-link-3-a outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
               Zjistit více.
             </a>

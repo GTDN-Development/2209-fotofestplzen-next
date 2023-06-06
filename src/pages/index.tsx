@@ -1,19 +1,20 @@
+import MainHeading from "@components/MainHeading";
+import Seo from "@components/Seo";
+import Wrapper from "@components/Wrapper";
 import Aftermovie from "@components/home/Aftermovie";
 import Carousel from "@components/home/Carousel";
 import Contact from "@components/home/Contact";
-import Exhibitors from "@components/home/Exhibitors";
 import Faq from "@components/home/Faq";
-import Guests from "@components/home/Guests";
 import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
-import MainHeading from "@components/MainHeading";
-import Program from "@components/program/Program";
-import ProgramDesktop from "@components/program/ProgramDesktop";
 import SlideUp from "@components/scroll-reveal/SlideUp";
-import Seo from "@components/Seo";
-import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
+
+// import Exhibitors from "@components/home/Exhibitors";
+// import Program from "@components/program/Program";
+// import ProgramDesktop from "@components/program/ProgramDesktop";
+// import Guests from "@components/home/Guests";
 
 // To Do
 // Sitemapa generátor
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         <Aftermovie />
       </Wrapper>
 
-      <Wrapper as={"section"} paddedContent="base">
+      {/* <Wrapper as={"section"} paddedContent="base">
         <SlideUp>
           <MainHeading level={2} number="01" size="2xl">
             Hosté
@@ -47,11 +48,11 @@ const Home: NextPage = () => {
           Letošní rok bude opět plný zajímavých jmen. Mrkej, kdo letos dorazí
           jako speaker nebo lektor.
         </SlideUp>
-        {/* <PendingContent className="mt-20 md:mt-36" /> */}
+        <PendingContent className="mt-20 md:mt-36" />
         <Guests className="mt-20 md:mt-36" />
-      </Wrapper>
+      </Wrapper> */}
 
-      <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
+      {/* <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
             <MainHeading level={2} size="2xl" number="02">
@@ -66,11 +67,12 @@ const Home: NextPage = () => {
             Přijď si vyzkoušet techniku těchto značek, omrknout novinky a
             poradit se s výběrem nového kousku.
           </SlideUp>
+          <PendingContent className="mt-16 w-full md:mt-28" />
           <Exhibitors />
         </div>
-      </Wrapper>
+      </Wrapper> */}
 
-      <Wrapper as={"section"} id="program" paddedContent="base">
+      {/* <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} number="03" size="2xl">
             Program
@@ -89,16 +91,30 @@ const Home: NextPage = () => {
           Na workshopy se letos budeš muset registrovat nebo si na něj zakoupit
           vstupenku, záleží na jaký půjdeš.
         </SlideUp>
-        {/* <PendingContent className="mt-20 md:mt-36" /> */}
+        <PendingContent className="mt-20 md:mt-36" />
         <Program className="mt-20" />
         <ProgramDesktop className="mt-36" />
-      </Wrapper>
+      </Wrapper> */}
 
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
         <SlideUp>
           <Newsletter />
         </SlideUp>
       </Wrapper>
+
+      <section>
+        <Wrapper className="pt-20 lg:pt-36">
+          <SlideUp className="flex w-full items-center justify-center">
+            <MainHeading level={2} number="2022" size="2xl">
+              Takový byl předchozí ročník
+            </MainHeading>
+          </SlideUp>
+        </Wrapper>
+
+        <div className="py-20 lg:py-36">
+          <Carousel />
+        </div>
+      </section>
 
       <Contact />
 
@@ -110,7 +126,7 @@ const Home: NextPage = () => {
       >
         <div className="col-span-1">
           <SlideUp>
-            <MainHeading level={2} number="05" size="2xl">
+            <MainHeading level={2} size="2xl">
               Faq
             </MainHeading>
           </SlideUp>
@@ -127,10 +143,6 @@ const Home: NextPage = () => {
         </div>
       </Wrapper>
 
-      <section className="py-24 xl:py-32">
-        <Carousel />
-      </section>
-
       <Wrapper
         as={"section"}
         id="vystavovatele"
@@ -139,7 +151,7 @@ const Home: NextPage = () => {
       >
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
-            <MainHeading level={2} size="2xl" number="06">
+            <MainHeading level={2} size="2xl">
               Partneři
             </MainHeading>
           </SlideUp>

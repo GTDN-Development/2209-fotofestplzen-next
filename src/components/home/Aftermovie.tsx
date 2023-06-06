@@ -20,7 +20,7 @@ export default function Aftermovie() {
     <section id="aftermovie">
       <button
         aria-label="Přehrát aftermovie"
-        className="group relative aspect-[16/9] w-full cursor-pointer bg-gray-900 focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
+        className="group relative aspect-[16/9] w-full cursor-pointer overflow-hidden rounded-2xl bg-gray-900 focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
         onClick={openModal}
       >
         <video

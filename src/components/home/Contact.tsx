@@ -8,13 +8,7 @@ import { toast } from "react-toastify";
 
 // Icons
 import SlideUp from "@components/scroll-reveal/SlideUp";
-import {
-  FaFacebookF,
-  FaGlobe,
-  FaInstagram,
-  FaSpotify,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import { HiDocumentDuplicate, HiPaperAirplane } from "react-icons/hi";
 import { ctaMenu } from "src/configs/routes";
 
@@ -25,7 +19,7 @@ export default function Contact() {
       <Wrapper as={"section"} id="kontakt" paddedContent="sm">
         <div className="lg:grid lg:grid-cols-7 lg:gap-32">
           <SlideUp as={"div"} className="col-span-2">
-            <MainHeading level={2} number="04" size="2xl">
+            <MainHeading level={2} size="2xl">
               Kontakt
             </MainHeading>
           </SlideUp>
@@ -63,54 +57,21 @@ export default function Contact() {
               Sledujte nás
             </Heading>
             <div className="mt-6 flex gap-3 xs:gap-6 md:gap-10">
-              <Button
-                as="a"
-                href={socials.facebook.link}
-                aria-label={socials.facebook.ariaLabel}
-                target="blank"
-                rel="noopener noreferrer"
-                type="outlined"
-                isIconBox={true}
-                shape="pill"
-              >
-                <FaFacebookF />
-              </Button>
-              <Button
-                as="a"
-                href={socials.instagram.link}
-                aria-label={socials.instagram.ariaLabel}
-                target="blank"
-                rel="noopener noreferrer"
-                type="outlined"
-                isIconBox={true}
-                shape="pill"
-              >
-                <FaInstagram />
-              </Button>
-              <Button
-                as="a"
-                href={socials.youtube.link}
-                aria-label={socials.youtube.ariaLabel}
-                target="blank"
-                rel="noopener noreferrer"
-                type="outlined"
-                isIconBox={true}
-                shape="pill"
-              >
-                <FaYoutube />
-              </Button>
-              <Button
-                as="a"
-                href={socials.spotify.link}
-                aria-label={socials.spotify.ariaLabel}
-                target="blank"
-                rel="noopener noreferrer"
-                type="outlined"
-                isIconBox={true}
-                shape="pill"
-              >
-                <FaSpotify />
-              </Button>
+              {socials.map((social) => (
+                <Button
+                  key={social.ariaLabel}
+                  as="a"
+                  href={social.link}
+                  aria-label={social.ariaLabel}
+                  target="blank"
+                  rel="noopener noreferrer"
+                  type="outlined"
+                  isIconBox={true}
+                  shape="pill"
+                >
+                  <social.icon />
+                </Button>
+              ))}
             </div>
           </SlideUp>
         </div>
@@ -128,23 +89,25 @@ export default function Contact() {
             </Heading>
           </SlideUp>
 
-          {/* Depo */}
+          {/* Místo konání */}
           <SlideUp
             as={"div"}
             className="lg:reveal-delay-200 col-span-5 mt-8 flex flex-col lg:mt-0"
           >
             <Heading level={3} size="lg">
-              DEPO2015, Plzeň
+              Papírna Plzeň
             </Heading>
             <span className="mt-1 block text-white">
-              Presslova 14, 301 00 Plzeň 3-Jižní Předměstí
+              Zahradní 173/2, 326 00 Plzeň 2-Slovany-Východní Předměstí
             </span>
             <div className="mt-6 flex gap-3 xs:gap-6 md:gap-10">
               <Button
                 aria-label="Zkopírování adresy místa konání"
                 onClick={() => {
                   notify();
-                  copy("Presslova 14, 301 00 Plzeň 3-Jižní Předměstí");
+                  copy(
+                    "Zahradní 173/2, 326 00 Plzeň 2-Slovany-Východní Předměstí"
+                  );
                 }}
                 as="button"
                 isIconBox={true}
@@ -154,7 +117,7 @@ export default function Contact() {
               </Button>
               <Button
                 as="a"
-                href="https://www.google.com/maps/dir//DEPO2015,+Presslova+14,+301+00+Plzeň+3-Jižn%C3%AD+Předměst%C3%AD/@49.7385211,13.3792283,17z/data=!3m1!5s0x470af1e1c2de49bb:0x5b63353c5a91cad6!4m9!4m8!1m0!1m5!1m1!1s0x470af1e1db0327df:0xe07126f9b5cb10fe!2m2!1d13.3814223!2d49.7385177!3e0"
+                href="https://www.google.com/maps/dir/49.7291907,13.3695219/papírna+plzeň/@49.7342684,13.3663154,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x410cb2c01f99e4b7:0x2c1d58ecadd7cf9!2m2!1d13.3853885!2d49.7364143?entry=ttu"
                 target="blank"
                 aria-label="Navigace na místo konání pomocí google map"
                 type="filled"
@@ -165,9 +128,9 @@ export default function Contact() {
               </Button>
               <Button
                 as="a"
-                href="https://www.depo2015.cz"
+                href="https://www.papirnaplzen.cz"
                 target="blank"
-                aria-label="Webová stránka DEPO2015"
+                aria-label="Webová stránka Papírna Plzeň"
                 type="filled"
                 isIconBox={true}
                 shape="pill"
@@ -183,9 +146,7 @@ export default function Contact() {
       <Wrapper size="lg" className="mt-8 md:mt-14">
         <iframe
           title="Místo konání festivalu"
-          src="https://maps.google.com/maps?q=depo%202015%20Plze%C5%88&t=k&z=15&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
-          scrolling="no"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=pap%C3%ADrna%20plze%C5%88+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           className="aspect-square w-full md:aspect-[2/1]"
           loading="lazy"
         />

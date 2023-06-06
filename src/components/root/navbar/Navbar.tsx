@@ -49,7 +49,7 @@ export default function Navbar() {
       >
         <NavbarMainLinks className="hidden lg:flex" />
         <Menu className="lg:hidden" />
-        <Link href="/">
+        <Link href="/" passHref legacyBehavior>
           <a className="absolute top-1/2 left-1/2 z-[120] max-w-[128px] -translate-y-1/2 -translate-x-1/2 scale-[0.85] outline-none focus-visible:ring-4 focus-visible:ring-primary/70 sm:max-w-[160px] sm:scale-100">
             <BrandLogo className="origin-left" />
           </a>

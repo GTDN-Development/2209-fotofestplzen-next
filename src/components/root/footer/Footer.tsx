@@ -30,7 +30,7 @@ export default function Footer() {
           <ul className="mt-2 space-y-1">
             {mainRoutes.map((route) => (
               <li key={route.label}>
-                <Link href={route.path}>
+                <Link href={route.path} passHref legacyBehavior>
                   <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                     {route.label}
                   </a>
@@ -47,21 +47,21 @@ export default function Footer() {
           </Heading>
           <ul className="mt-2 space-y-1">
             <li>
-              <Link href="/cookies">
+              <Link href="/cookies" passHref legacyBehavior>
                 <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Cookies
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/gdpr">
+              <Link href="/gdpr" passHref legacyBehavior>
                 <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Zpracování osobních údajů
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/brand">
+              <Link href="/brand" passHref legacyBehavior>
                 <a className="c-link-3-a text-base font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70">
                   Grafické podklady
                 </a>

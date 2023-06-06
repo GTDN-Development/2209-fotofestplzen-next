@@ -5,3 +5,34 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "tailwindcss/variants";
+
+@layer components {
+  .swiper-themed {
+    --swiper-theme-color: hsl(var(--color-muted));
+
+    --swiper-navigation-size: 36px;
+    --swiper-navigation-color: var(--swiper-theme-color);
+
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 14px;
+    --swiper-pagination-bullet-height: 2px;
+    --swiper-pagination-bullet-inactive-color: hsl(var(--color-muted));
+    --swiper-pagination-bullet-inactive-opacity: 0.25;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 2px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+
+    --swiper-preloader-color: var(--swiper-theme-color);
+
+    @media screen(lg) {
+      --swiper-pagination-bullet-width: 38px;
+      --swiper-pagination-bullet-height: 2px;
+      --swiper-pagination-bullet-horizontal-gap: 0px;
+    }
+
+    & .swiper-pagination-bullet {
+      @apply rounded-none;
+    }
+  }
+}
