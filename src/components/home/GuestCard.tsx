@@ -1,7 +1,8 @@
 import Heading from "@components/Heading";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 // import Image from "next/image";
-import ExportedImage from "next-image-export-optimizer";
+// import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 
 type Props = {
@@ -28,13 +29,12 @@ export default function GuestCard({
       as={"div"}
       className={`col-span-1 flex flex-col gap-4 ${className}`}
     >
-      <ExportedImage
+      <Image
         src={src}
         alt={alt}
         width={500}
         height={500}
         className="aspect-square bg-gray-800 object-cover"
-        objectFit="cover"
         loading="lazy"
       />
       <Heading size="sm" level={3}>
@@ -46,7 +46,7 @@ export default function GuestCard({
           href={igLink}
           target={"_blank"}
           rel="noreferrer"
-          className="c-link-3-a flex text-xs sm:text-sm lg:text-base items-center gap-2 text-primary"
+          className="c-link-3-a flex items-center gap-2 text-xs text-primary sm:text-sm lg:text-base"
         >
           <FaInstagram />
           <span>{igName}</span>

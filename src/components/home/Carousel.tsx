@@ -1,5 +1,6 @@
 // import Image from "next/image";
-import ExportedImage from "next-image-export-optimizer";
+// import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -180,7 +181,7 @@ export default function Carousel({ className = "" }: Props) {
             className={`flex h-72 flex-col items-start justify-start gap-2 px-4 pb-10 sm:h-96 lg:px-12 xl:h-[640px] ${slide.className}`}
           >
             <div className="h-5/6 w-full overflow-hidden rounded-2xl bg-slate-700">
-              <ExportedImage
+              <Image
                 src={slide.src}
                 alt={slide.alt}
                 width={slide.width}

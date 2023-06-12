@@ -22,7 +22,7 @@
     "@headlessui/react": "^1.6.5",
     "copy-to-clipboard": "^3.3.1",
     "framer-motion": "^10.12.16",
-    "next": "^13.4.4",
+    "next": "^13.4.5",
     "next-image-export-optimizer": "^1.7.0",
     "next-seo": "^5.4.0",
     "react": "18.2.0",

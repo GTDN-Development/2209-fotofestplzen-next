@@ -7,10 +7,10 @@ export const mainRoutes = [
   //   label: "Program a mapa",
   //   path: "/program",
   // },
-  {
-    label: "Registrace pro firmy",
-    path: "/registrace",
-  },
+  // {
+  //   label: "Registrace pro firmy",
+  //   path: "/registrace",
+  // },
   {
     label: "FAQ",
     path: "/#faq",

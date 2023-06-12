@@ -7,7 +7,8 @@ import ProgramDesktop from "@components/program/ProgramDesktop";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
-import ExportedImage from "next-image-export-optimizer";
+// import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 import { HiDownload } from "react-icons/hi";
 
 const ProgramPage: NextPage = () => {
@@ -74,13 +75,12 @@ const ProgramPage: NextPage = () => {
             className="h-full w-full object-cover"
             loading="lazy"
           /> */}
-          <ExportedImage
+          <Image
             src={"/images/mapa-arealu-2022-preview.jpg"}
             alt={"Mapa areálu festivalu"}
             width={1920}
             height={1080}
             className="aspect-video h-full w-full object-cover"
-            objectFit="cover"
             loading="lazy"
           />
         </div>
