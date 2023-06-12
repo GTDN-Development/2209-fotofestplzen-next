@@ -2,7 +2,7 @@ import MainHeading from "@components/MainHeading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 
 const RegistrationPage: NextPage = () => {
   return (
@@ -28,7 +28,7 @@ const RegistrationPage: NextPage = () => {
         </div>
       </Wrapper>
 
-      <Wrapper as={"section"} id="program" paddedContent="sm">
+      {/* <Wrapper as={"section"} id="program" paddedContent="sm">
         <CountUp
           start={0}
           end={537}
@@ -50,7 +50,7 @@ const RegistrationPage: NextPage = () => {
             </div>
           )}
         </CountUp>
-      </Wrapper>
+      </Wrapper> */}
 
       <Wrapper as={"section"} id="program" paddedContent="sm">
         {/* E-mail */}
