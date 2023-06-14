@@ -9,10 +9,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const slides = [
+  // {
+  //   id: 1,
+  //   src: "/images/slides/slide-1.jpg",
+  //   alt: "Slide 1",
+  //   width: 1920,
+  //   height: 1440,
+  //   caption: "Lorem ipsum dolor",
+  //   className: "aspect-[4/3] !w-auto",
+  // },
   {
-    id: 1,
-    src: "/images/slides/slide-1.jpg",
-    alt: "Slide 1",
+    id: 8,
+    src: "/images/slides/slide-8.jpg",
+    alt: "Slide 8",
     width: 1920,
     height: 1440,
     caption: "Lorem ipsum dolor",
@@ -71,15 +80,6 @@ const slides = [
     height: 1920,
     caption: "Lorem ipsum dolor",
     className: "aspect-[3/4] !w-auto",
-  },
-  {
-    id: 8,
-    src: "/images/slides/slide-8.jpg",
-    alt: "Slide 8",
-    width: 1920,
-    height: 1440,
-    caption: "Lorem ipsum dolor",
-    className: "aspect-[4/3] !w-auto",
   },
   {
     id: 9,

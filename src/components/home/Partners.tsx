@@ -23,6 +23,24 @@ export default function Partners() {
       </SlideUp>
       <SlideUp
         as={"a"}
+        href="https://www.papirnaplzen.cz"
+        target="blank"
+        rel="noopener noreferrer"
+        className="reveal-delay-100 col-span-1 flex w-full cursor-pointer items-center justify-center"
+      >
+        <div className={`h-[48] w-[70px]`}>
+          <img
+            src="/logos/brands/papirna.svg"
+            alt="Papírna - logo"
+            width="66"
+            height="91"
+            loading="lazy"
+            className="h-full w-full"
+          />
+        </div>
+      </SlideUp>
+      {/* <SlideUp
+        as={"a"}
         href="https://www.depo2015.cz"
         target="blank"
         rel="noopener noreferrer"
@@ -38,7 +56,7 @@ export default function Partners() {
             className="h-full w-full"
           />
         </div>
-      </SlideUp>
+      </SlideUp> */}
       <SlideUp
         as={"a"}
         href="https://imagepro.cz"

@@ -1,3 +1,4 @@
+import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
@@ -9,7 +10,9 @@ import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
 import SlideUp from "@components/scroll-reveal/SlideUp";
+import { ctaMenu } from "@configs/routes";
 import type { NextPage } from "next";
+import Image from "next/image";
 
 // import Exhibitors from "@components/home/Exhibitors";
 // import Program from "@components/program/Program";
@@ -140,6 +143,31 @@ const Home: NextPage = () => {
         </div>
         <div className="col-span-2">
           <Faq />
+        </div>
+      </Wrapper>
+
+      <Wrapper as={"section"} size="lg" id="faq" paddedContent="base">
+        <div className="relative flex w-full flex-col items-center justify-center gap-7 overflow-hidden rounded-2xl p-4 sm:aspect-video sm:gap-16 md:p-10">
+          <Image
+            src="/images/slides/slide-1.jpg"
+            alt="Vystavovatelé"
+            width={1920}
+            height={1440}
+            className="absolute inset-0 z-0 h-full w-full object-cover opacity-30"
+          />
+          <SlideUp className="relative z-30">
+            <Heading font="display" size="xl" level={2} className="text-center">
+              Chceš být mezi vystavovateli na letošním ročníku?
+              <br />
+              Napiš nám na
+            </Heading>
+          </SlideUp>
+          <a
+            href={ctaMenu[2].link}
+            className="c-link-3-a relative z-30 text-center font-display text-3xl text-white xs:text-4xl lg:text-6xl"
+          >
+            {ctaMenu[2].label}
+          </a>
         </div>
       </Wrapper>
 
