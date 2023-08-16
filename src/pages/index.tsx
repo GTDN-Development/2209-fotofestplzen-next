@@ -14,7 +14,8 @@ import { ctaMenu } from "@configs/routes";
 import type { NextPage } from "next";
 import Image from "next/image";
 
-// import Exhibitors from "@components/home/Exhibitors";
+import Exhibitors from "@components/home/Exhibitors";
+// import PendingContent from "@components/home/PendingContent";
 // import Program from "@components/program/Program";
 // import ProgramDesktop from "@components/program/ProgramDesktop";
 // import Guests from "@components/home/Guests";
@@ -55,10 +56,10 @@ const Home: NextPage = () => {
         <Guests className="mt-20 md:mt-36" />
       </Wrapper> */}
 
-      {/* <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
+      <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
-            <MainHeading level={2} size="2xl" number="02">
+            <MainHeading level={2} size="2xl">
               Vystavovatelé
             </MainHeading>
           </SlideUp>
@@ -70,10 +71,10 @@ const Home: NextPage = () => {
             Přijď si vyzkoušet techniku těchto značek, omrknout novinky a
             poradit se s výběrem nového kousku.
           </SlideUp>
-          <PendingContent className="mt-16 w-full md:mt-28" />
+          {/* <PendingContent className="mt-16 w-full md:mt-28" /> */}
           <Exhibitors />
         </div>
-      </Wrapper> */}
+      </Wrapper>
 
       {/* <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
