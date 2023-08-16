@@ -137,6 +137,30 @@ const exhibitors = [
     height: "46",
     wrapperClassName: "h-[64px] w-[160px]",
   },
+  // 2023
+  {
+    src: "/logos/brands/jupio.svg",
+    alt: "Logo Jupio",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[140px]",
+  },
+  // 2023
+  {
+    src: "/logos/brands/sekonic.svg",
+    alt: "Logo Sekonic",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[160px]",
+  },
+  // 2023
+  {
+    src: "/logos/brands/dicapac.svg",
+    alt: "Logo Dicapac",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[140px]",
+  },
 ];
 
 export default function Exhibitors() {
