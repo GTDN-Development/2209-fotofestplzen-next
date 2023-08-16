@@ -66,6 +66,14 @@ const exhibitors = [
     height: "46",
     wrapperClassName: "h-[64px] w-[130px]",
   },
+  // 2023
+  {
+    src: "/logos/brands/colorama.svg",
+    alt: "Logo Colorama",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[180px]",
+  },
   // {
   //   src: "/logos/brands/focus-nordic.svg",
   //   alt: "Logo Focus Nordic",
