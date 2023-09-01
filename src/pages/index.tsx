@@ -88,7 +88,7 @@ const Home: NextPage = () => {
           className="mt-8 max-w-prose text-lg font-medium"
         >
           I letos se držíme osvědčené taktiky, program bude složený z přednášek
-          a workshopů dvou vnitřních a dvou venkovních stagích. Přednášky,
+          a workshopů na dvou vnitřních a dvou venkovních stagích. Přednášky,
           stejně jako minule, budou volně přístupné pro všechny návštěvníky.
           <br />
           <br />
