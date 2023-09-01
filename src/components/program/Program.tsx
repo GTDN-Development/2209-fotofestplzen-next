@@ -42,7 +42,7 @@ export default function Program({ className = "" }: Props) {
     >
       <Tab.List
         className={
-          "flex w-auto gap-5 overflow-x-auto px-1 py-4 sm:w-full sm:flex-1 sm:shrink-0 sm:flex-col sm:p-0"
+          "flex w-auto gap-2 overflow-x-auto px-1 py-4 sm:w-full sm:flex-1 sm:shrink-0 sm:flex-col sm:gap-5 sm:p-0"
         }
       >
         {stagesTabs.map((stage) => (
@@ -50,8 +50,8 @@ export default function Program({ className = "" }: Props) {
             key={stage.id}
             className={({ selected }) =>
               selected
-                ? "flex w-48 shrink-0 flex-col items-center justify-center gap-3 rounded-lg bg-gray-700/60 p-3 text-left outline-none transition-colors duration-200 sm:w-full sm:items-start sm:justify-start sm:p-5"
-                : "flex w-48 shrink-0 flex-col items-center justify-center gap-3 rounded-lg bg-transparent p-3 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full sm:items-start sm:justify-start sm:p-5"
+                ? "flex w-48 shrink-0 flex-col items-center justify-center gap-2 rounded-lg bg-gray-700/60 p-3 text-left outline-none transition-colors duration-200 sm:w-full sm:items-start sm:justify-start sm:p-5"
+                : "flex w-48 shrink-0 flex-col items-center justify-center gap-2 rounded-lg bg-transparent p-3 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full sm:items-start sm:justify-start sm:p-5"
             }
           >
             <Heading

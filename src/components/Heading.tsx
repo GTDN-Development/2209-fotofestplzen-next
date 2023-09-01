@@ -31,8 +31,8 @@ type HeadingTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 // Size classes -> https://tailwindcss.com/docs/font-size
 const sizeClasses = {
-  sm: "text-lg",
-  base: "text-xl xs:text-2xl",
+  sm: "text-base",
+  base: "text-lg xs:text-2xl",
   lg: "text-2xl xs:text-3xl lg:text-4xl",
   xl: "text-3xl xs:text-4xl lg:text-6xl",
   "2xl": "text-3xl xs:text-4xl sm:text-5xl lg:text-7xl",

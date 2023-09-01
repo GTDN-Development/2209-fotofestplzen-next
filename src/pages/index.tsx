@@ -1,3 +1,4 @@
+import Alert from "@components/Alert";
 import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Seo from "@components/Seo";
@@ -102,7 +103,15 @@ const Home: NextPage = () => {
           </strong>
         </SlideUp>
         {/* <PendingContent className="mt-20 md:mt-36" /> */}
-        <Program className="mt-20" />
+        <Alert
+          status="info"
+          variant="filled"
+          hasIcon={true}
+          title="Výběr stage"
+          text="Stage lze horizontálně posouvat. Pro zobrazení programu z jiné stage stačí najet a kliknout na jinou."
+          className="mt-10 block text-primary sm:mt-0 sm:hidden"
+        />
+        <Program className="mt-10 sm:mt-20" />
         <ProgramDesktop className="mt-36" />
       </Wrapper>
 
