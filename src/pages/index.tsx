@@ -78,7 +78,7 @@ const Home: NextPage = () => {
 
       <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
-          <MainHeading level={2} number="03" size="2xl">
+          <MainHeading level={2} size="2xl">
             Program
           </MainHeading>
         </SlideUp>
