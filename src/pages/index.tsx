@@ -16,8 +16,8 @@ import Image from "next/image";
 
 import Exhibitors from "@components/home/Exhibitors";
 // import PendingContent from "@components/home/PendingContent";
-// import Program from "@components/program/Program";
-// import ProgramDesktop from "@components/program/ProgramDesktop";
+import Program from "@components/program/Program";
+import ProgramDesktop from "@components/program/ProgramDesktop";
 // import Guests from "@components/home/Guests";
 
 // To Do
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
         </div>
       </Wrapper>
 
-      {/* <Wrapper as={"section"} id="program" paddedContent="base">
+      <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} number="03" size="2xl">
             Program
@@ -88,17 +88,23 @@ const Home: NextPage = () => {
           className="mt-8 max-w-prose text-lg font-medium"
         >
           I letos se držíme osvědčené taktiky, program bude složený z přednášek
-          a workshopů na čtyřech stagích. Přednášky, stejně jako minule, budou
-          volně přístupné pro všechny návštěvníky.
+          a workshopů dvou vnitřních a dvou venkovních stagích. Přednášky,
+          stejně jako minule, budou volně přístupné pro všechny návštěvníky.
           <br />
           <br />
-          Na workshopy se letos budeš muset registrovat nebo si na něj zakoupit
-          vstupenku, záleží na jaký půjdeš.
+          Na workshopy se i letos budeš muset registrovat nebo si na něj
+          zakoupit vstupenku, záleží na jaký půjdeš.
+          <br />
+          <br />
+          <strong>
+            Registrace na workshopy bude spuštěna v průběhu září a bude dopředu
+            oznámena na sociálních sítích. Tak sleduj náš Instagram a Facebook.
+          </strong>
         </SlideUp>
-        <PendingContent className="mt-20 md:mt-36" />
+        {/* <PendingContent className="mt-20 md:mt-36" /> */}
         <Program className="mt-20" />
         <ProgramDesktop className="mt-36" />
-      </Wrapper> */}
+      </Wrapper>
 
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
         <SlideUp>

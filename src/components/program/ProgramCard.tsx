@@ -40,7 +40,7 @@ export default function ProgramCard({
       {/* Při vydaném programu - během festivalu */}
       {hasRegistration ? (
         <span className="block text-center text-warning">
-          Přístupné pouze registrovaným
+          Registrace dostupná již brzy
         </span>
       ) : (
         <span className="block text-center text-info">Volně přístupné</span>

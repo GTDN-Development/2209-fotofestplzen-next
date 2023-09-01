@@ -1,7 +1,7 @@
 import Heading from "@components/Heading";
 import { Tab } from "@headlessui/react";
 import ProgramCard from "./ProgramCard";
-import { atelier, klempirna, kontejnery, nadvori } from "./programData";
+import { cafe, mainStage, outdoor1, outdoor2 } from "./programData";
 
 type Props = {
   className?: string;
@@ -10,25 +10,25 @@ type Props = {
 const stagesTabs = [
   {
     id: 1,
-    headline: "Klempírna",
+    headline: "Hlavní stage",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
   {
     id: 2,
-    headline: "Ateliér",
+    headline: "Kavárna",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
   {
     id: 3,
-    headline: "Kontejnery",
+    headline: "Venkovní stage 1",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
   {
     id: 4,
-    headline: "Nádvoří",
+    headline: "Venkovní stage 2",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
@@ -50,8 +50,8 @@ export default function Program({ className = "" }: Props) {
             key={stage.id}
             className={({ selected }) =>
               selected
-                ? "flex w-32 shrink-0 flex-col items-center justify-center gap-3 bg-gray-700/60 p-5 text-left outline-none transition-colors duration-200 sm:w-full sm:items-start sm:justify-start"
-                : "flex w-32 shrink-0 flex-col items-center justify-center gap-3 bg-transparent p-5 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full sm:items-start sm:justify-start"
+                ? "flex w-48 shrink-0 flex-col items-center justify-center gap-3 rounded-lg bg-gray-700/60 p-3 text-left outline-none transition-colors duration-200 sm:w-full sm:items-start sm:justify-start sm:p-5"
+                : "flex w-48 shrink-0 flex-col items-center justify-center gap-3 rounded-lg bg-transparent p-3 text-left outline-none transition-colors duration-200 hover:bg-gray-700/30 sm:w-full sm:items-start sm:justify-start sm:p-5"
             }
           >
             <Heading
@@ -71,7 +71,7 @@ export default function Program({ className = "" }: Props) {
       <Tab.Panels className={"py-10 sm:w-full sm:flex-1 sm:py-0 sm:px-5"}>
         <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {klempirna.map((item) => (
+            {mainStage.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}
@@ -88,7 +88,7 @@ export default function Program({ className = "" }: Props) {
         </Tab.Panel>
         <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {atelier.map((item) => (
+            {cafe.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}
@@ -105,7 +105,7 @@ export default function Program({ className = "" }: Props) {
         </Tab.Panel>
         <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {kontejnery.map((item) => (
+            {outdoor1.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}
@@ -122,7 +122,7 @@ export default function Program({ className = "" }: Props) {
         </Tab.Panel>
         <Tab.Panel className={"w-full bg-gray-700/50 p-6"}>
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {nadvori.map((item) => (
+            {outdoor2.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}

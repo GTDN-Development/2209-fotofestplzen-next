@@ -1,6 +1,6 @@
 import Heading from "@components/Heading";
 import ProgramCard from "./ProgramCard";
-import { atelier, klempirna, kontejnery, nadvori } from "./programData";
+import { cafe, mainStage, outdoor1, outdoor2 } from "./programData";
 
 type Props = {
   className?: string;
@@ -30,12 +30,8 @@ export default function ProgramDesktop({
             color="primary"
             weight="medium"
           >
-            Klempírna
+            Hlavní stage
           </Heading>
-          {/* <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p> */}
         </div>
         <div className="flex flex-col gap-3 text-left">
           <Heading
@@ -45,12 +41,8 @@ export default function ProgramDesktop({
             color="primary"
             weight="medium"
           >
-            Ateliér
+            Kavárna
           </Heading>
-          {/* <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p> */}
         </div>
         <div className="flex flex-col gap-3 text-left">
           <Heading
@@ -60,12 +52,8 @@ export default function ProgramDesktop({
             color="primary"
             weight="medium"
           >
-            Kontejnery
+            Venkovní stage 1
           </Heading>
-          {/* <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p> */}
         </div>
         <div className="flex flex-col gap-3 text-left">
           <Heading
@@ -75,12 +63,8 @@ export default function ProgramDesktop({
             color="primary"
             weight="medium"
           >
-            Nádvoří
+            Venkovní stage 2
           </Heading>
-          {/* <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-            dolorum.
-          </p> */}
         </div>
       </div>
 
@@ -88,7 +72,7 @@ export default function ProgramDesktop({
       <div className="grid grid-cols-4 items-start lg:gap-6 xl:gap-10">
         <div className="w-full bg-gray-700/50 p-6">
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {klempirna.map((item) => (
+            {mainStage.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}
@@ -105,7 +89,7 @@ export default function ProgramDesktop({
         </div>
         <div className="w-full bg-gray-700/50 p-6">
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {atelier.map((item) => (
+            {cafe.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}
@@ -122,7 +106,7 @@ export default function ProgramDesktop({
         </div>
         <div className="w-full bg-gray-700/50 p-6">
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {kontejnery.map((item) => (
+            {outdoor1.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}
@@ -139,7 +123,7 @@ export default function ProgramDesktop({
         </div>
         <div className="w-full bg-gray-700/50 p-6">
           <ul className="flex w-full flex-col divide-y divide-gray-600/80">
-            {nadvori.map((item) => (
+            {outdoor2.map((item) => (
               <ProgramCard
                 key={item.id}
                 speaker={item.speaker}

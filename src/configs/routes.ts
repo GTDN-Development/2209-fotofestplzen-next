@@ -3,10 +3,10 @@ export const mainRoutes = [
     label: "Hlavní strana",
     path: "/",
   },
-  // {
-  //   label: "Program a mapa",
-  //   path: "/program",
-  // },
+  {
+    label: "Program",
+    path: "/#program",
+  },
   // {
   //   label: "Registrace pro firmy",
   //   path: "/registrace",
