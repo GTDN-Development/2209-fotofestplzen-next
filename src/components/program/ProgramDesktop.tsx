@@ -83,6 +83,7 @@ export default function ProgramDesktop({
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>
@@ -100,6 +101,7 @@ export default function ProgramDesktop({
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>
@@ -117,6 +119,7 @@ export default function ProgramDesktop({
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>
@@ -134,6 +137,7 @@ export default function ProgramDesktop({
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>

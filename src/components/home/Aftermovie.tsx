@@ -29,7 +29,7 @@ export default function Aftermovie() {
           muted
           className="h-full w-full object-cover opacity-40"
         >
-          <source src="/ffp-19-preview.mp4" type="video/mp4" />
+          <source src="/ffp-22-preview.mp4" type="video/mp4" />
           Váš prohlížeč nepodporuje video
         </video>
         <div className="z-1 absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2">
@@ -40,7 +40,7 @@ export default function Aftermovie() {
         </div>
       </button>
       <span className="pt-8 text-xs font-medium uppercase tracking-wider">
-        Foto Fest Plzeň 2019 aftermovie
+        Foto Fest Plzeň 2022 aftermovie
       </span>
 
       {/* Samotný modal */}
@@ -78,9 +78,9 @@ export default function Aftermovie() {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/bUianikiilw"
+                  // src="https://www.youtube.com/embed/bUianikiilw" // 2019
+                  src="https://www.youtube.com/embed/iN_8Tz_Sad4?si=uPIUUu5yK-al2Jmt"
                   title="YouTube video player"
-                  frameBorder="0"
                   className="h-full w-full bg-gray-400"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

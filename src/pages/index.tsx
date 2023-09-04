@@ -1,5 +1,4 @@
 import Alert from "@components/Alert";
-import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
@@ -11,9 +10,7 @@ import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
 import SlideUp from "@components/scroll-reveal/SlideUp";
-import { ctaMenu } from "@configs/routes";
 import type { NextPage } from "next";
-import Image from "next/image";
 
 import Exhibitors from "@components/home/Exhibitors";
 // import PendingContent from "@components/home/PendingContent";
@@ -162,7 +159,7 @@ const Home: NextPage = () => {
         </div>
       </Wrapper>
 
-      <Wrapper as={"section"} size="lg" id="faq" paddedContent="base">
+      {/* <Wrapper as={"section"} size="lg" id="faq" paddedContent="base">
         <div className="relative flex w-full flex-col items-center justify-center gap-7 overflow-hidden rounded-2xl p-4 sm:aspect-video sm:gap-16 md:p-10">
           <Image
             src="/images/slides/slide-1.jpg"
@@ -185,7 +182,7 @@ const Home: NextPage = () => {
             {ctaMenu[2].label}
           </a>
         </div>
-      </Wrapper>
+      </Wrapper> */}
 
       <Wrapper
         as={"section"}

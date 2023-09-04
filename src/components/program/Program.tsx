@@ -82,6 +82,7 @@ export default function Program({ className = "" }: Props) {
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>
@@ -99,6 +100,7 @@ export default function Program({ className = "" }: Props) {
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>
@@ -116,6 +118,7 @@ export default function Program({ className = "" }: Props) {
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>
@@ -133,6 +136,7 @@ export default function Program({ className = "" }: Props) {
                 isPaid={item.isPaid}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
+                optionalMessage={item.optionalMessage}
               />
             ))}
           </ul>

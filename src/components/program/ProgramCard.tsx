@@ -9,6 +9,7 @@ type Props = {
   isPaid: boolean;
   isFull: boolean;
   shopLink: string;
+  optionalMessage?: string;
   className?: string;
 };
 
@@ -21,6 +22,7 @@ export default function ProgramCard({
   isPaid,
   isFull,
   shopLink,
+  optionalMessage,
   className = "",
 }: Props) {
   return (
@@ -37,6 +39,13 @@ export default function ProgramCard({
       <span className="text-center text-lg leading-tight tracking-widest text-gray-400">
         {time}
       </span>
+
+      {optionalMessage && (
+        <span className="block text-center text-warning">
+          {optionalMessage}
+        </span>
+      )}
+
       {/* Při vydaném programu - během festivalu */}
       {hasRegistration ? (
         <span className="block text-center text-warning">

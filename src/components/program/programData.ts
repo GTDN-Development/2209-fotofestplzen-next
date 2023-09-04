@@ -9,6 +9,7 @@ export const mainStage = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const mainStage = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ export const mainStage = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export const mainStage = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ export const mainStage = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 6,
@@ -64,18 +69,33 @@ export const mainStage = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
-  // {
-  //   id: 7,
-  //   speaker: "Marian Chytka",
-  //   category: "Přednáška",
-  //   name: "sportovní fotka (nevyplňovat do programu)",
-  //   time: "16:45 - 17:45",
-  //   hasRegistration: false,
-  //   isPaid: false,
-  //   isFull: false,
-  //   shopLink: "#",
-  // },
+  {
+    id: 7,
+    speaker: "Fujifilm & Jan Pelikán",
+    category: "Přednáška",
+    name: "Jak přistupovat k reklamnímu a produktovému focení ve studiu.",
+    time: "15:15 - 16:30",
+    hasRegistration: false,
+    isPaid: false,
+    isFull: false,
+    shopLink: "#",
+    optionalMessage:
+      "Přednáška proběhne mimo hlavní stage vedle hlavního sálu. Sraz bude u stánku Fujifilmu v 15:15.",
+  },
+  {
+    id: 8,
+    speaker: "Marian Chytka",
+    category: "Přednáška",
+    name: "sportovní fotka",
+    time: "16:45 - 17:45",
+    hasRegistration: false,
+    isPaid: false,
+    isFull: false,
+    shopLink: "#",
+    optionalMessage: "",
+  },
 ];
 
 export const cafe = [
@@ -89,6 +109,7 @@ export const cafe = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 2,
@@ -100,6 +121,7 @@ export const cafe = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 3,
@@ -111,6 +133,7 @@ export const cafe = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 4,
@@ -122,6 +145,7 @@ export const cafe = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 5,
@@ -133,6 +157,7 @@ export const cafe = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 6,
@@ -144,17 +169,19 @@ export const cafe = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 7,
     speaker: "Radek Karko",
     category: "Přednáška",
-    name: "Wildlife",
+    name: "Vlčí cesta - Wildlife fotografie vlků",
     time: "15:30 - 16:30",
     hasRegistration: false,
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 8,
@@ -166,6 +193,7 @@ export const cafe = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
 ];
 
@@ -182,6 +210,7 @@ export const outdoor1 = [
     isFull: false,
     shopLink:
       "https://www.phototools.cz/zbozi/portret-s-canonem-workshop-na-foto-fest-plzen/",
+    optionalMessage: "",
   },
   {
     id: 2,
@@ -193,6 +222,7 @@ export const outdoor1 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 3,
@@ -204,6 +234,7 @@ export const outdoor1 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 4,
@@ -215,6 +246,7 @@ export const outdoor1 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 5,
@@ -226,6 +258,7 @@ export const outdoor1 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 6,
@@ -237,6 +270,7 @@ export const outdoor1 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
 ];
 
@@ -252,6 +286,7 @@ export const outdoor2 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 2,
@@ -263,6 +298,7 @@ export const outdoor2 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 3,
@@ -274,6 +310,7 @@ export const outdoor2 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 4,
@@ -285,6 +322,7 @@ export const outdoor2 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   {
     id: 5,
@@ -296,6 +334,7 @@ export const outdoor2 = [
     isPaid: false,
     isFull: false,
     shopLink: "#",
+    optionalMessage: "",
   },
   // {
   //   id: 6,
@@ -307,5 +346,6 @@ export const outdoor2 = [
   //   isPaid: false,
   //   isFull: false,
   //   shopLink: "#",
+  //   optionalMessage: "",
   // },
 ];
