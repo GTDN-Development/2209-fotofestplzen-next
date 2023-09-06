@@ -175,7 +175,7 @@ export const cafe = [
     id: 7,
     speaker: "Radek Karko",
     category: "Přednáška",
-    name: "Vlčí cesta - Wildlife fotografie vlků",
+    name: "Za vlčím pohledem - Wildlife fotografie vlků",
     time: "15:30 - 16:30",
     hasRegistration: false,
     isPaid: false,
