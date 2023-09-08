@@ -74,15 +74,15 @@ export const mainStage = [
   {
     id: 7,
     speaker: "Fujifilm & Jan Pelikán",
-    category: "Přednáška",
+    category: "Workshop",
     name: "Jak přistupovat k reklamnímu a produktovému focení ve studiu.",
-    time: "15:15 - 16:30",
-    hasRegistration: false,
+    time: "15:15 - 16:45",
+    hasRegistration: true,
     isPaid: false,
     isFull: false,
     shopLink: "#",
     optionalMessage:
-      "Přednáška proběhne mimo hlavní stage vedle hlavního sálu. Sraz bude u stánku Fujifilmu v 15:15.",
+      "Workshop proběhne mimo hlavní stage vedle hlavního sálu. Sraz bude u stánku Fujifilmu v 15:15.",
   },
   {
     id: 8,
