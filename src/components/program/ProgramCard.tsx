@@ -1,4 +1,5 @@
 import Heading from "@components/Heading";
+import RegistrationModal from "@components/program/RegistrationModal";
 
 type Props = {
   speaker: string;
@@ -7,6 +8,7 @@ type Props = {
   time: string;
   hasRegistration: boolean;
   isPaid: boolean;
+  price?: string;
   isFull: boolean;
   shopLink: string;
   optionalMessage?: string;
@@ -20,6 +22,7 @@ export default function ProgramCard({
   time,
   hasRegistration,
   isPaid,
+  price,
   isFull,
   shopLink,
   optionalMessage,
@@ -47,17 +50,20 @@ export default function ProgramCard({
       )}
 
       {/* Při vydaném programu - během festivalu */}
-      {hasRegistration ? (
+      {/* {hasRegistration ? (
         <span className="block text-center text-warning">
           Registrace dostupná již brzy
         </span>
       ) : (
         <span className="block text-center text-info">Volně přístupné</span>
-      )}
+      )} */}
 
       {/* Při spuetěných registracích v programu */}
-      {/* {hasRegistration && !isPaid && !isFull && <RegistrationModal />}
+      {hasRegistration && !isPaid && !isFull && <RegistrationModal />}
       {hasRegistration && isPaid && !isFull && (
+        <RegistrationModal price={price} />
+      )}
+      {/* {hasRegistration && isPaid && !isFull && (
         <a
           href={shopLink}
           target="blank"
@@ -65,7 +71,7 @@ export default function ProgramCard({
         >
           Koupit vstupenku
         </a>
-      )}
+      )} */}
       {isFull && (
         <span className="block text-center text-error">
           Kapacita naplněna - již se nelze registrovat
@@ -73,7 +79,7 @@ export default function ProgramCard({
       )}
       {!hasRegistration && !isPaid && (
         <span className="block text-center text-info">Volně přístupné</span>
-      )} */}
+      )}
     </li>
   );
 }
