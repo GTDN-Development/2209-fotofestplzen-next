@@ -92,12 +92,6 @@ const Home: NextPage = () => {
           <br />
           Na workshopy se i letos budeš muset registrovat nebo si na něj
           zakoupit vstupenku, záleží na jaký půjdeš.
-          <br />
-          <br />
-          <strong>
-            Registrace na workshopy bude spuštěna v průběhu září a bude dopředu
-            oznámena na sociálních sítích. Tak sleduj náš Instagram a Facebook.
-          </strong>
         </SlideUp>
         {/* <PendingContent className="mt-20 md:mt-36" /> */}
         <Alert
