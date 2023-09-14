@@ -14,7 +14,6 @@ import type { NextPage } from "next";
 
 import Exhibitors from "@components/home/Exhibitors";
 // import PendingContent from "@components/home/PendingContent";
-import Guests from "@components/home/Guests";
 import Program from "@components/program/Program";
 import ProgramDesktop from "@components/program/ProgramDesktop";
 
@@ -36,7 +35,7 @@ const Home: NextPage = () => {
         <Aftermovie />
       </Wrapper>
 
-      <Wrapper as={"section"} id="hoste" paddedContent="base">
+      {/* <Wrapper as={"section"} id="hoste" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
             Hosté
@@ -50,9 +49,9 @@ const Home: NextPage = () => {
           Letošní rok bude opět plný zajímavých jmen. Mrkej, kdo letos dorazí
           jako speaker nebo lektor.
         </SlideUp>
-        {/* <PendingContent className="mt-20 md:mt-36" /> */}
+        <PendingContent className="mt-20 md:mt-36" />
         <Guests className="mt-20 md:mt-36" />
-      </Wrapper>
+      </Wrapper> */}
 
       <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">

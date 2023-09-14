@@ -1,8 +1,8 @@
 export const mainRoutes = [
-  {
-    label: "Hosté",
-    path: "/#hoste",
-  },
+  // {
+  //   label: "Hosté",
+  //   path: "/#hoste",
+  // },
   {
     label: "Program a registrace",
     path: "/#program",
