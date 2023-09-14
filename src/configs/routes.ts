@@ -4,7 +4,11 @@ export const mainRoutes = [
     path: "/",
   },
   {
-    label: "Program",
+    label: "Hosté",
+    path: "/#hoste",
+  },
+  {
+    label: "Program a registrace",
     path: "/#program",
   },
   // {
