@@ -2,46 +2,48 @@ import Alert from "@components/Alert";
 import Button from "@components/Button";
 import Checkbox from "@components/forms/Checkbox";
 import Input from "@components/forms/Input";
+import Select from "@components/forms/Select";
 import Textarea from "@components/forms/Textarea";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { HiArrowRight } from "react-icons/hi";
+import { mainStage, outdoor1, outdoor2 } from "./programData";
 
 type Props = {
   className?: string;
 };
 
-// const workshops = [
-//   {
-//     id: 1,
-//     value: "F22 - Michal Houdek - Fotíme motorku prakticky",
-//   },
-//   {
-//     id: 2,
-//     value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
-//   },
-//   {
-//     id: 3,
-//     value: "Nikon - Photowalk s Nikonem",
-//   },
-//   {
-//     id: 4,
-//     value: "Peakdesign - You and me",
-//   },
-//   {
-//     id: 5,
-//     value: "Manfrotto - Lukáš Navara - Portréty",
-//   },
-//   {
-//     id: 6,
-//     value: "Dominik Beránek - Street portrét",
-//   },
-//   {
-//     id: 7,
-//     value: "Tomáš Košňar + Leica klub - Focení na film",
-//   },
-// ];
+const workshops = [
+  {
+    id: 1,
+    value: "F22 - Michal Houdek - Fotíme motorku prakticky",
+  },
+  {
+    id: 2,
+    value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
+  },
+  {
+    id: 3,
+    value: "Nikon - Photowalk s Nikonem",
+  },
+  {
+    id: 4,
+    value: "Peakdesign - You and me",
+  },
+  {
+    id: 5,
+    value: "Manfrotto - Lukáš Navara - Portréty",
+  },
+  {
+    id: 6,
+    value: "Dominik Beránek - Street portrét",
+  },
+  {
+    id: 7,
+    value: "Tomáš Košňar + Leica klub - Focení na film",
+  },
+];
 
 export default function RegistrationForm({ className = "" }: Props) {
   // Ref
@@ -84,6 +86,12 @@ export default function RegistrationForm({ className = "" }: Props) {
       setIsLoading(false);
     }
   }
+
+  // Filter only workshops from mainStage array of objects
+  const mainStageWorkshops = mainStage.filter(
+    (item) => item.category === "Workshop"
+  );
+
   return (
     <form
       className={`flex flex-col items-start gap-y-6 ${className}`}
@@ -129,19 +137,83 @@ export default function RegistrationForm({ className = "" }: Props) {
         />
       </div>
 
-      {/* <Select
+      <Select
         label="Vyberte workshop"
         id="workshop"
         name="workshop"
         isRequired={true}
       >
         <option value={""}>Vyberte jednu z možností *</option>
-        {workshops.map((workshop) => (
-          <option key={workshop.id} value={workshop.value}>
-            {workshop.value}
-          </option>
+        {mainStageWorkshops.map((workshop, i) => (
+          <Fragment key={i}>
+            <option
+              disabled={workshop.isFull}
+              className=" disabled:opacity-50"
+              value={`${
+                workshop.speaker +
+                " - " +
+                workshop.name +
+                (workshop.isPaid ? " - " + workshop.price : "") +
+                (workshop.isFull ? " - " + "Kapacita naplněna" : "")
+              }`}
+            >
+              {`${
+                workshop.speaker +
+                " - " +
+                workshop.name +
+                (workshop.isPaid ? " - " + workshop.price : "") +
+                (workshop.isFull ? " - " + "Kapacita naplněna" : "")
+              }`}
+            </option>
+          </Fragment>
         ))}
-      </Select> */}
+        {outdoor1.map((workshop, i) => (
+          <Fragment key={i}>
+            <option
+              disabled={workshop.isFull}
+              className=" disabled:opacity-50"
+              value={`${
+                workshop.speaker +
+                " - " +
+                workshop.name +
+                (workshop.isPaid ? " - " + workshop.price : "") +
+                (workshop.isFull ? " - " + "Kapacita naplněna" : "")
+              }`}
+            >
+              {`${
+                workshop.speaker +
+                " - " +
+                workshop.name +
+                (workshop.isPaid ? " - " + workshop.price : "") +
+                (workshop.isFull ? " - " + "Kapacita naplněna" : "")
+              }`}
+            </option>
+          </Fragment>
+        ))}
+        {outdoor2.map((workshop, i) => (
+          <Fragment key={i}>
+            <option
+              disabled={workshop.isFull}
+              className=" disabled:opacity-50"
+              value={`${
+                workshop.speaker +
+                " - " +
+                workshop.name +
+                (workshop.isPaid ? " - " + workshop.price : "") +
+                (workshop.isFull ? " - " + "Kapacita naplněna" : "")
+              }`}
+            >
+              {`${
+                workshop.speaker +
+                " - " +
+                workshop.name +
+                (workshop.isPaid ? " - " + workshop.price : "") +
+                (workshop.isFull ? " - " + "Kapacita naplněna" : "")
+              }`}
+            </option>
+          </Fragment>
+        ))}
+      </Select>
 
       <Textarea
         name="message"
@@ -185,7 +257,7 @@ export default function RegistrationForm({ className = "" }: Props) {
             isDismissable={true}
             hasIcon={true}
             title="Registrace byla odeslána"
-            text="Vaše registrace na workshop proběhla úspěšně. Děkujeme."
+            text="Tvoje registrace na workshop proběhla úspěšně. Její platnost ti ještě potvrdíme e-mailem. Děkujeme."
             className="my-6"
           />
         ) : null}
@@ -196,7 +268,7 @@ export default function RegistrationForm({ className = "" }: Props) {
             isDismissable={true}
             hasIcon={true}
             title="Něco se pokazilo"
-            text="Je nám líto, ale vaši registraci se nepodařilo odeslat. Zkuste to znovu později nebo využijte jinou možnost kontaktu."
+            text="Je nám líto, ale tvojí registraci se nepodařilo odeslat. Zkus to znovu později nebo využij jinou možnost kontaktu."
             className="my-6"
           />
         ) : null}

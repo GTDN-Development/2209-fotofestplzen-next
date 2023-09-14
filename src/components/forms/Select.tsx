@@ -35,7 +35,7 @@ export default function Select({
       focus:border-primary focus:bg-white focus:!outline-none focus:ring-4 focus:ring-primary ${
         isDisabled
           ? "pointer-events-none cursor-not-allowed opacity-60"
-          : "cursor-default opacity-100"
+          : "cursor-pointer opacity-100"
       }`}
         disabled={isDisabled}
         required={isRequired}

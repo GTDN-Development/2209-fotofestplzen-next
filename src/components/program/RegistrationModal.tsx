@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import { MdClose } from "react-icons/md";
 import RegistrationForm from "./RegistrationForm";
 
-export default function RegistrationModal() {
+export default function RegistrationModal({ price }: { price?: string }) {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -23,7 +23,7 @@ export default function RegistrationModal() {
           onClick={openModal}
           className="c-link-3-a text-primary focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
         >
-          Registrovat se
+          {`Registrovat se ${price ? `za ${price}` : "zdarma"}`}
         </button>
       </div>
 
@@ -65,7 +65,7 @@ export default function RegistrationModal() {
                   </Dialog.Title>
                   <p className="mb-10">
                     Platnost registrace ti po odeslání formuláře potvrdíme
-                    e-mailem.
+                    e-mailem. U placených workshopů zašleme fakturu.
                   </p>
                   <RegistrationForm />
 

@@ -81,6 +81,7 @@ export default function ProgramDesktop({
                 time={item.time}
                 hasRegistration={item.hasRegistration}
                 isPaid={item.isPaid}
+                price={item.price}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
                 optionalMessage={item.optionalMessage}
@@ -99,6 +100,7 @@ export default function ProgramDesktop({
                 time={item.time}
                 hasRegistration={item.hasRegistration}
                 isPaid={item.isPaid}
+                price={item.price}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
                 optionalMessage={item.optionalMessage}
@@ -117,6 +119,7 @@ export default function ProgramDesktop({
                 time={item.time}
                 hasRegistration={item.hasRegistration}
                 isPaid={item.isPaid}
+                price={item.price}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
                 optionalMessage={item.optionalMessage}
@@ -135,6 +138,7 @@ export default function ProgramDesktop({
                 time={item.time}
                 hasRegistration={item.hasRegistration}
                 isPaid={item.isPaid}
+                price={item.price}
                 isFull={item.isFull}
                 shopLink={item.shopLink}
                 optionalMessage={item.optionalMessage}

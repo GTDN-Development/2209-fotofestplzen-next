@@ -1,10 +1,10 @@
 export const mainRoutes = [
+  // {
+  //   label: "Hosté",
+  //   path: "/#hoste",
+  // },
   {
-    label: "Hlavní strana",
-    path: "/",
-  },
-  {
-    label: "Program",
+    label: "Program a registrace",
     path: "/#program",
   },
   // {

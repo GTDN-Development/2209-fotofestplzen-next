@@ -16,7 +16,6 @@ import Exhibitors from "@components/home/Exhibitors";
 // import PendingContent from "@components/home/PendingContent";
 import Program from "@components/program/Program";
 import ProgramDesktop from "@components/program/ProgramDesktop";
-// import Guests from "@components/home/Guests";
 
 // To Do
 // Sitemapa generátor
@@ -36,9 +35,9 @@ const Home: NextPage = () => {
         <Aftermovie />
       </Wrapper>
 
-      {/* <Wrapper as={"section"} paddedContent="base">
+      {/* <Wrapper as={"section"} id="hoste" paddedContent="base">
         <SlideUp>
-          <MainHeading level={2} number="01" size="2xl">
+          <MainHeading level={2} size="2xl">
             Hosté
           </MainHeading>
         </SlideUp>
@@ -77,7 +76,7 @@ const Home: NextPage = () => {
       <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
-            Program
+            Program a registrace
           </MainHeading>
         </SlideUp>
         <SlideUp
@@ -92,12 +91,6 @@ const Home: NextPage = () => {
           <br />
           Na workshopy se i letos budeš muset registrovat nebo si na něj
           zakoupit vstupenku, záleží na jaký půjdeš.
-          <br />
-          <br />
-          <strong>
-            Registrace na workshopy bude spuštěna v průběhu září a bude dopředu
-            oznámena na sociálních sítích. Tak sleduj náš Instagram a Facebook.
-          </strong>
         </SlideUp>
         {/* <PendingContent className="mt-20 md:mt-36" /> */}
         <Alert
