@@ -10,12 +10,12 @@ export default function NavbarMainLinks({
 }: NavbarMainLinksOptions) {
   return (
     <ul
-      className={`list-none space-x-3 xl:space-x-7 2xl:space-x-12 ${className}`}
+      className={`list-none space-x-5 xl:space-x-8 2xl:space-x-12 ${className}`}
     >
       {mainRoutes.map((route) => (
         <li key={route.label}>
           <Link href={route.path} passHref legacyBehavior>
-            <a className="c-link-3-a text-xs font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70 xl:text-base">
+            <a className="c-link-3-a text-sm font-medium text-muted outline-none focus-visible:ring-4 focus-visible:ring-primary/70 xl:text-base">
               {route.label}
             </a>
           </Link>

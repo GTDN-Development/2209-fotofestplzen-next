@@ -1,9 +1,5 @@
 export const mainRoutes = [
   {
-    label: "Hlavní strana",
-    path: "/",
-  },
-  {
     label: "Hosté",
     path: "/#hoste",
   },
