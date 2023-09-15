@@ -53,7 +53,7 @@ export const mainStage = [
   },
   {
     id: 5,
-    speaker: "PeakDesign & Honza Březina",
+    speaker: "Peak Design & Honza Březina",
     category: "Přednáška",
     name: "Japonsko",
     time: "13:45 - 15:00",
