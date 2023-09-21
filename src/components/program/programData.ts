@@ -238,8 +238,7 @@ export const outdoor1 = [
     isPaid: false,
     price: "0 Kč",
     isFull: false,
-    shopLink:
-      "https://www.phototools.cz/zbozi/portret-s-canonem-workshop-na-foto-fest-plzen/",
+    shopLink: "",
     optionalMessage: "",
   },
   {
@@ -277,7 +276,7 @@ export const outdoor1 = [
     hasRegistration: true,
     isPaid: false,
     price: "0 Kč",
-    isFull: false,
+    isFull: true,
     shopLink: "#",
     optionalMessage: "",
   },
@@ -303,7 +302,7 @@ export const outdoor1 = [
     hasRegistration: true,
     isPaid: false,
     price: "0 Kč",
-    isFull: false,
+    isFull: true,
     shopLink: "#",
     optionalMessage: "",
   },
