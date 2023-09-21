@@ -86,7 +86,7 @@ export const mainStage = [
     hasRegistration: true,
     isPaid: false,
     price: "0 Kč",
-    isFull: false,
+    isFull: true,
     shopLink: "#",
     optionalMessage:
       "Workshop proběhne mimo hlavní stage vedle hlavního sálu. Sraz bude u stánku Fujifilmu v 15:15.",
