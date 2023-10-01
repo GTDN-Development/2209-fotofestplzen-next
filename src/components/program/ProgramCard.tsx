@@ -74,7 +74,8 @@ export default function ProgramCard({
       )} */}
       {isFull && (
         <span className="block text-center text-error">
-          Kapacita naplněna - již se nelze registrovat
+          {/* Kapacita naplněna - již se nelze registrovat */}
+          Registrace uzavřeny
         </span>
       )}
       {!hasRegistration && !isPaid && (
