@@ -13,7 +13,7 @@ export default function Hero() {
             Foto fest Plzeň
           </h1>
           <span className="font-display text-base font-medium text-primary xs:text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
-            2023
+            2024
           </span>
         </div>
         <p className="anim-slide-up reveal-delay-600 mt-2 max-w-3xl text-lg font-medium md:text-xl">
