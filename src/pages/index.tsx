@@ -9,6 +9,116 @@ import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
+import { useCallback, useState } from "react";
+import { Gallery } from "react-grid-gallery";
+
+const photos = [
+  {
+    src: "/images/grid-photos/1.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/2.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/3.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/0.jpg",
+    width: 2,
+    height: 3,
+  },
+  {
+    src: "/images/grid-photos/4.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/5.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/6.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/7.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/8.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/9.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/10.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/11.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/12.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/13.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/14.jpg",
+    width: 2,
+    height: 3,
+  },
+  {
+    src: "/images/grid-photos/15.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/16.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/17.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/18.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/19.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/images/grid-photos/20.jpg",
+    width: 3,
+    height: 2,
+  },
+];
 
 // import PendingContent from "@components/home/PendingContent";
 
@@ -19,6 +129,19 @@ import type { NextPage } from "next";
 // Finální content
 
 const Home: NextPage = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+  const openLightbox = useCallback((event: any, { photo, index }: any) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
+
   return (
     <>
       <Seo
@@ -67,19 +190,6 @@ const Home: NextPage = () => {
       {/* <Exhibitors />
         </div>
       </Wrapper> */}
-      <Wrapper className="py-8">
-        <h1 className="mr-2 py-2 font-display text-4xl font-bold uppercase leading-[1.2] text-white xs:text-xl sm:text-3xl lg:text-5xl 2xl:text-[6rem]">
-          Vystavovatelé
-        </h1>
-        <p className="font-display text-5xl font-normal uppercase leading-[1.2] text-white">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas. Neque porro quisquam est, qui dolorem ipsum quia dolor
-          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-          tempora incidunt ut labore et dolore magnam aliquam quaerat
-          voluptatem.
-        </p>
-      </Wrapper>
 
       {/* <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
@@ -114,9 +224,6 @@ const Home: NextPage = () => {
       </Wrapper> */}
 
       <Wrapper className="py-8">
-        <h1 className="mr-2 py-2 font-display text-4xl font-bold uppercase leading-[1.2] text-white xs:text-xl sm:text-3xl lg:text-5xl 2xl:text-[6rem]">
-          Program a registrace
-        </h1>
         <p className="font-display text-5xl font-normal uppercase leading-[1.2] text-white">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
           habitant morbi tristique senectus et netus et malesuada fames ac
@@ -136,15 +243,21 @@ const Home: NextPage = () => {
       <section>
         <Wrapper className="pt-20 lg:pt-36">
           <SlideUp className="flex w-full items-center justify-center">
-            <MainHeading level={2} number="2022" size="2xl">
+            <MainHeading level={2} number="2023" size="2xl">
               Takový byl předchozí ročník
             </MainHeading>
           </SlideUp>
         </Wrapper>
-
-        {/* <div className="py-20 lg:py-36">
-          <Carousel />
-        </div> */}
+        <Wrapper>
+          <div className="cursor-default py-20 lg:py-36">
+            {/* <Carousel /> */}
+            <Gallery
+              images={photos}
+              enableImageSelection={false}
+              rowHeight={244}
+            />
+          </div>
+        </Wrapper>
       </section>
 
       <Contact />
