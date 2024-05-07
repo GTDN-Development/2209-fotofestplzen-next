@@ -1,9 +1,7 @@
-import Alert from "@components/Alert";
 import MainHeading from "@components/MainHeading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import Aftermovie from "@components/home/Aftermovie";
-import Carousel from "@components/home/Carousel";
 import Contact from "@components/home/Contact";
 import Faq from "@components/home/Faq";
 import Hero from "@components/home/Hero";
@@ -12,10 +10,7 @@ import Partners from "@components/home/Partners";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
 
-import Exhibitors from "@components/home/Exhibitors";
 // import PendingContent from "@components/home/PendingContent";
-import Program from "@components/program/Program";
-import ProgramDesktop from "@components/program/ProgramDesktop";
 
 // To Do
 // Sitemapa generátor
@@ -53,7 +48,7 @@ const Home: NextPage = () => {
         <Guests className="mt-20 md:mt-36" />
       </Wrapper> */}
 
-      <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
+      {/* <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
             <MainHeading level={2} size="2xl">
@@ -67,13 +62,26 @@ const Home: NextPage = () => {
           >
             Přijď si vyzkoušet techniku těchto značek, omrknout novinky a
             poradit se s výběrem nového kousku.
-          </SlideUp>
-          {/* <PendingContent className="mt-16 w-full md:mt-28" /> */}
-          <Exhibitors />
+          </SlideUp> */}
+      {/* <PendingContent className="mt-16 w-full md:mt-28" /> */}
+      {/* <Exhibitors />
         </div>
+      </Wrapper> */}
+      <Wrapper className="py-8">
+        <h1 className="mr-2 py-2 font-display text-4xl font-bold uppercase leading-[1.2] text-white xs:text-xl sm:text-3xl lg:text-5xl 2xl:text-[6rem]">
+          Vystavovatelé
+        </h1>
+        <p className="font-display text-5xl font-normal uppercase leading-[1.2] text-white">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Neque porro quisquam est, qui dolorem ipsum quia dolor
+          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+          tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem.
+        </p>
       </Wrapper>
 
-      <Wrapper as={"section"} id="program" paddedContent="base">
+      {/* <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
             Program a registrace
@@ -91,9 +99,9 @@ const Home: NextPage = () => {
           <br />
           Na workshopy se i letos budeš muset registrovat nebo si na něj
           zakoupit vstupenku, záleží na jaký půjdeš.
-        </SlideUp>
-        {/* <PendingContent className="mt-20 md:mt-36" /> */}
-        <Alert
+        </SlideUp> */}
+      {/* <PendingContent className="mt-20 md:mt-36" /> */}
+      {/* <Alert
           status="info"
           variant="filled"
           hasIcon={true}
@@ -103,6 +111,20 @@ const Home: NextPage = () => {
         />
         <Program className="mt-10 sm:mt-20" />
         <ProgramDesktop className="mt-36" />
+      </Wrapper> */}
+
+      <Wrapper className="py-8">
+        <h1 className="mr-2 py-2 font-display text-4xl font-bold uppercase leading-[1.2] text-white xs:text-xl sm:text-3xl lg:text-5xl 2xl:text-[6rem]">
+          Program a registrace
+        </h1>
+        <p className="font-display text-5xl font-normal uppercase leading-[1.2] text-white">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Neque porro quisquam est, qui dolorem ipsum quia dolor
+          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+          tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem.
+        </p>
       </Wrapper>
 
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
@@ -120,9 +142,9 @@ const Home: NextPage = () => {
           </SlideUp>
         </Wrapper>
 
-        <div className="py-20 lg:py-36">
+        {/* <div className="py-20 lg:py-36">
           <Carousel />
-        </div>
+        </div> */}
       </section>
 
       <Contact />

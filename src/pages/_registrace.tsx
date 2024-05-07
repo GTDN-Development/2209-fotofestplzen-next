@@ -1,5 +1,4 @@
 import MainHeading from "@components/MainHeading";
-import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
 // import CountUp from "react-countup";
@@ -7,7 +6,7 @@ import type { NextPage } from "next";
 const RegistrationPage: NextPage = () => {
   return (
     <>
-      <Seo title="Program a mapa" description="" noFollow noIndex />
+      {/* <Seo title="Program a mapa" description="" noFollow noIndex /> */}
       <Wrapper as={"header"} paddedContent="sm">
         <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
           Registrace pro firmy
@@ -52,22 +51,22 @@ const RegistrationPage: NextPage = () => {
         </CountUp>
       </Wrapper> */}
 
-      <Wrapper as={"section"} id="program" paddedContent="sm">
-        {/* E-mail */}
-        {/* Jméno a příjmení */}
-        {/* Vystavující firma */}
-        {/* Fakturační adresa */}
-        {/* Zasílací adresa */}
-        {/* IČ */}
-        {/* DIČ */}
-        {/* Vyřizuje */}
-        {/* Telefon */}
-        {/* E-mail */}
+      {/* <Wrapper as={"section"} id="program" paddedContent="sm"> */}
+      {/* E-mail */}
+      {/* Jméno a příjmení */}
+      {/* Vystavující firma */}
+      {/* Fakturační adresa */}
+      {/* Zasílací adresa */}
+      {/* IČ */}
+      {/* DIČ */}
+      {/* Vyřizuje */}
+      {/* Telefon */}
+      {/* E-mail */}
 
-        {/* Dropdown - Typ účasti */}
-        {/* Textarea - Představení společnosti "O nás" */}
+      {/* Dropdown - Typ účasti */}
+      {/* Textarea - Představení společnosti "O nás" */}
 
-        {/* I. Pořadatel
+      {/* I. Pořadatel
 A.T. Shop s.r.o., Borská 75, 316 00 Plzeň, IČ 26374757, DIČ CZ 26374757
 
 
@@ -93,7 +92,7 @@ V. Platební a storno podmínky
 - Vystavovatel se zavazuje pořadateli zaplatit úplatu za vybrané partnerství na základě potvrzení přihlášky a vystavení zálohové faktury, nejpozději v den splatnosti zálohové faktury. 
 
 - Storno poplatek je stanoven na 100 % zaplacené částky.  */}
-      </Wrapper>
+      {/* </Wrapper> */}
     </>
   );
 };

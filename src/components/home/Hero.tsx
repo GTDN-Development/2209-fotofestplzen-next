@@ -29,7 +29,7 @@ export default function Hero() {
               Kdy
             </span>
             <span className="block font-display text-2xl font-normal uppercase leading-tight text-primary sm:text-3xl">
-              1.10. 2023
+              6. 10. 2024
             </span>
           </div>
           <div className="anim-slide-up reveal-delay-800 flex flex-col rounded-xl bg-gray-700/50 py-1.5 px-4 md:py-3 md:px-7">
