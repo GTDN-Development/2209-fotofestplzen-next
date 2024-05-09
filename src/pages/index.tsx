@@ -9,7 +9,6 @@ import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
-import { useCallback, useState } from "react";
 import { Gallery } from "react-grid-gallery";
 
 const photos = [
@@ -129,19 +128,6 @@ const photos = [
 // Finální content
 
 const Home: NextPage = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-  const openLightbox = useCallback((event: any, { photo, index }: any) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
-
   return (
     <>
       <Seo
