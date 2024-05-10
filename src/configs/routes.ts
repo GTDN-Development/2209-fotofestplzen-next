@@ -24,7 +24,7 @@ export const mainRoutes = [
 export const ctaMenu = [
   {
     label: "Facebook událost",
-    link: "https://www.facebook.com/events/272327748479978/",
+    link: "https://www.facebook.com/events/767153108537199/?acontext=%7B%22event_action_history%22%3A[]%7D",
   },
   {
     label: "+420 775 554 479",
