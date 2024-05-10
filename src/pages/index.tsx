@@ -9,115 +9,11 @@ import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
+import { useState } from "react";
 import { Gallery } from "react-grid-gallery";
-
-const photos = [
-  {
-    src: "/images/grid-photos/1.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/2.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/3.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/0.jpg",
-    width: 2,
-    height: 3,
-  },
-  {
-    src: "/images/grid-photos/4.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/5.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/6.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/7.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/8.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/9.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/10.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/11.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/12.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/13.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/14.jpg",
-    width: 2,
-    height: 3,
-  },
-  {
-    src: "/images/grid-photos/15.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/16.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/17.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/18.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/19.jpg",
-    width: 3,
-    height: 2,
-  },
-  {
-    src: "/images/grid-photos/20.jpg",
-    width: 3,
-    height: 2,
-  },
-];
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { CustomImage, images } from "../configs/images";
 
 // import PendingContent from "@components/home/PendingContent";
 
@@ -126,6 +22,34 @@ const photos = [
 // Komponent "program již brzy"
 // Seo
 // Finální content
+
+const slides = images.map(({ original, width, height }) => ({
+  src: original,
+  width,
+  height,
+}));
+
+function ImageGallery() {
+  const [index, setIndex] = useState(-1);
+  const handleClick = (index: number, item: CustomImage) => setIndex(index);
+  return (
+    <div>
+      <Gallery
+        images={images}
+        enableImageSelection={false}
+        rowHeight={244}
+        onClick={handleClick}
+        margin={8}
+      />
+      <Lightbox
+        slides={slides}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+      />
+    </div>
+  );
+}
 
 const Home: NextPage = () => {
   return (
@@ -209,8 +133,8 @@ const Home: NextPage = () => {
         <ProgramDesktop className="mt-36" />
       </Wrapper> */}
 
-      <Wrapper className="py-8">
-        <p className="font-display text-5xl font-normal uppercase leading-[1.2] text-white">
+      <Wrapper className="pt-20">
+        <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
           habitant morbi tristique senectus et netus et malesuada fames ac
           turpis egestas. Neque porro quisquam est, qui dolorem ipsum quia dolor
@@ -227,7 +151,7 @@ const Home: NextPage = () => {
       </Wrapper>
 
       <section>
-        <Wrapper className="pt-20 lg:pt-36">
+        <Wrapper className="pt-12 lg:pt-10">
           <SlideUp className="flex w-full items-center justify-center">
             <MainHeading level={2} number="2023" size="2xl">
               Takový byl předchozí ročník
@@ -237,11 +161,7 @@ const Home: NextPage = () => {
         <Wrapper>
           <div className="cursor-default py-20 lg:py-36">
             {/* <Carousel /> */}
-            <Gallery
-              images={photos}
-              enableImageSelection={false}
-              rowHeight={244}
-            />
+            <ImageGallery />
           </div>
         </Wrapper>
       </section>
