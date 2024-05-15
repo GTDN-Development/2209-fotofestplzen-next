@@ -135,12 +135,13 @@ const Home: NextPage = () => {
 
       <Wrapper className="pt-20">
         <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
-          Jsme v plném proudu s přípravami na letošní ročník. Opět se můžete
-          těšit na vystavovatele předních značek, zajímavé hosty a další.
-          Program bude složený z přednášek a workshopů na dvou vnitřních a dvou
-          venkovních stagích. Přednášky budou volně přístupné pro všechny
-          návštěvníky. Na workshopy bude opět nutná registrace. Brzy zveřejníme
-          další informace, tak odebírej novinky, ať ti nic neuteče!
+          Přípravy letošního ročníku jsou v plném proudu. 💪 I letos pro vás
+          chystáme nabitý program plný přednášek a workshopů a těšit se můžete i
+          na testování techniky. 📸
+          <br />
+          <br />
+          Vstup na festival bude opět zdarma. Nezapomeňte nás sledovat aby vám
+          neutekly novinky a program.
         </p>
       </Wrapper>
 
