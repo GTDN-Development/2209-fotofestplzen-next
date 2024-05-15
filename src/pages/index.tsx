@@ -135,12 +135,12 @@ const Home: NextPage = () => {
 
       <Wrapper className="pt-20">
         <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas. Neque porro quisquam est, qui dolorem ipsum quia dolor
-          sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
-          tempora incidunt ut labore et dolore magnam aliquam quaerat
-          voluptatem.
+          Jsme v plném proudu s přípravami na letošní ročník. Opět se můžete
+          těšit na vystavovatele předních značek, zajímavé hosty a další.
+          Program bude složený z přednášek a workshopů na dvou vnitřních a dvou
+          venkovních stagích. Přednášky budou volně přístupné pro všechny
+          návštěvníky. Na workshopy bude opět nutná registrace. Brzy zveřejníme
+          další informace, tak odebírej novinky, ať ti nic neuteče!
         </p>
       </Wrapper>
 
