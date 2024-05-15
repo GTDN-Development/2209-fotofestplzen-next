@@ -80,9 +80,9 @@ export default function Newsletter() {
           Odebírej novinky, ať ti nic neuteče!
         </Heading>
         <p className="mt-6 text-white">
-          Chceš mít nejnovější info z festivalu i mimo něj? Přihlas se k odběru
-          a dáme ti vědět o programu, hostech a akcích, které připravujeme i
-          během roku.
+          Chceš mít nejnovější info z festivalu i&nbsp;mimo něj? Přihlas se k
+          odběru a dáme ti vědět o programu, hostech a akcích, které
+          připravujeme i&nbsp;během roku.
         </p>
       </div>
       <form
