@@ -1,9 +1,7 @@
-import Alert from "@components/Alert";
 import MainHeading from "@components/MainHeading";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import Aftermovie from "@components/home/Aftermovie";
-import Carousel from "@components/home/Carousel";
 import Contact from "@components/home/Contact";
 import Faq from "@components/home/Faq";
 import Hero from "@components/home/Hero";
@@ -11,17 +9,47 @@ import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
+import { useState } from "react";
+import { Gallery } from "react-grid-gallery";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { CustomImage, images } from "../configs/images";
 
-import Exhibitors from "@components/home/Exhibitors";
 // import PendingContent from "@components/home/PendingContent";
-import Program from "@components/program/Program";
-import ProgramDesktop from "@components/program/ProgramDesktop";
 
 // To Do
 // Sitemapa generátor
 // Komponent "program již brzy"
 // Seo
 // Finální content
+
+const slides = images.map(({ original, width, height }) => ({
+  src: original,
+  width,
+  height,
+}));
+
+function ImageGallery() {
+  const [index, setIndex] = useState(-1);
+  const handleClick = (index: number, item: CustomImage) => setIndex(index);
+  return (
+    <div>
+      <Gallery
+        images={images}
+        enableImageSelection={false}
+        rowHeight={244}
+        onClick={handleClick}
+        margin={8}
+      />
+      <Lightbox
+        slides={slides}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+      />
+    </div>
+  );
+}
 
 const Home: NextPage = () => {
   return (
@@ -53,7 +81,7 @@ const Home: NextPage = () => {
         <Guests className="mt-20 md:mt-36" />
       </Wrapper> */}
 
-      <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
+      {/* <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
             <MainHeading level={2} size="2xl">
@@ -67,13 +95,13 @@ const Home: NextPage = () => {
           >
             Přijď si vyzkoušet techniku těchto značek, omrknout novinky a
             poradit se s výběrem nového kousku.
-          </SlideUp>
-          {/* <PendingContent className="mt-16 w-full md:mt-28" /> */}
-          <Exhibitors />
+          </SlideUp> */}
+      {/* <PendingContent className="mt-16 w-full md:mt-28" /> */}
+      {/* <Exhibitors />
         </div>
-      </Wrapper>
+      </Wrapper> */}
 
-      <Wrapper as={"section"} id="program" paddedContent="base">
+      {/* <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
             Program a registrace
@@ -91,9 +119,9 @@ const Home: NextPage = () => {
           <br />
           Na workshopy se i letos budeš muset registrovat nebo si na něj
           zakoupit vstupenku, záleží na jaký půjdeš.
-        </SlideUp>
-        {/* <PendingContent className="mt-20 md:mt-36" /> */}
-        <Alert
+        </SlideUp> */}
+      {/* <PendingContent className="mt-20 md:mt-36" /> */}
+      {/* <Alert
           status="info"
           variant="filled"
           hasIcon={true}
@@ -103,6 +131,18 @@ const Home: NextPage = () => {
         />
         <Program className="mt-10 sm:mt-20" />
         <ProgramDesktop className="mt-36" />
+      </Wrapper> */}
+
+      <Wrapper className="pt-20">
+        <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
+          Přípravy letošního ročníku jsou v plném proudu. 💪 I letos pro vás
+          chystáme nabitý program plný přednášek a workshopů a těšit se můžete i
+          na testování techniky. 📸
+          <br />
+          <br />
+          Vstup na festival bude opět zdarma. Nezapomeňte nás sledovat aby vám
+          neutekly novinky a program.
+        </p>
       </Wrapper>
 
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
@@ -112,17 +152,19 @@ const Home: NextPage = () => {
       </Wrapper>
 
       <section>
-        <Wrapper className="pt-20 lg:pt-36">
+        <Wrapper className="pt-12 lg:pt-10">
           <SlideUp className="flex w-full items-center justify-center">
-            <MainHeading level={2} number="2022" size="2xl">
+            <MainHeading level={2} number="2023" size="2xl">
               Takový byl předchozí ročník
             </MainHeading>
           </SlideUp>
         </Wrapper>
-
-        <div className="py-20 lg:py-36">
-          <Carousel />
-        </div>
+        <Wrapper>
+          <div className="cursor-default py-20 lg:py-36">
+            {/* <Carousel /> */}
+            <ImageGallery />
+          </div>
+        </Wrapper>
       </section>
 
       <Contact />
