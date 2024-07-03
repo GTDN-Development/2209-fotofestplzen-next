@@ -7,13 +7,14 @@ import ProgramDesktop from "@components/program/ProgramDesktop";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
 // import ExportedImage from "next-image-export-optimizer";
+import Seo from "@components/Seo";
 import Image from "next/image";
 import { HiDownload } from "react-icons/hi";
 
 const ProgramPage: NextPage = () => {
   return (
     <>
-      {/* <Seo title="Program a mapa" description="" noFollow noIndex /> */}
+      <Seo title="Program a mapa" description="" noFollow noIndex />
       <Wrapper as={"header"} paddedContent="sm">
         <MainHeading level={2} size="3xl" className="pt-20 md:pt-32">
           Program
