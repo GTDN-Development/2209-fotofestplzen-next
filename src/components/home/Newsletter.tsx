@@ -49,7 +49,7 @@ export default function Newsletter() {
           "service_0kuce38",
           "template_4fr03xf",
           e.target,
-          "user_2tNsUaIQSULo6wFXKZVCs"
+          "peXEQ-b1oFp3uAQvI"
         )
         .then(
           (result) => {
