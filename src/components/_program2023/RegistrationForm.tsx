@@ -14,36 +14,36 @@ type Props = {
   className?: string;
 };
 
-// const workshops = [
-//   {
-//     id: 1,
-//     value: "F22 - Michal Houdek - Fotíme motorku prakticky",
-//   },
-//   {
-//     id: 2,
-//     value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
-//   },
-//   {
-//     id: 3,
-//     value: "Nikon - Photowalk s Nikonem",
-//   },
-//   {
-//     id: 4,
-//     value: "Peakdesign - You and me",
-//   },
-//   {
-//     id: 5,
-//     value: "Manfrotto - Lukáš Navara - Portréty",
-//   },
-//   {
-//     id: 6,
-//     value: "Dominik Beránek - Street portrét",
-//   },
-//   {
-//     id: 7,
-//     value: "Tomáš Košňar + Leica klub - Focení na film",
-//   },
-// ];
+const workshops = [
+  {
+    id: 1,
+    value: "F22 - Michal Houdek - Fotíme motorku prakticky",
+  },
+  {
+    id: 2,
+    value: "Tamron - Lukáš Szwejdar - Glamour fotografie",
+  },
+  {
+    id: 3,
+    value: "Nikon - Photowalk s Nikonem",
+  },
+  {
+    id: 4,
+    value: "Peakdesign - You and me",
+  },
+  {
+    id: 5,
+    value: "Manfrotto - Lukáš Navara - Portréty",
+  },
+  {
+    id: 6,
+    value: "Dominik Beránek - Street portrét",
+  },
+  {
+    id: 7,
+    value: "Tomáš Košňar + Leica klub - Focení na film",
+  },
+];
 
 export default function RegistrationForm({ className = "" }: Props) {
   // Ref
@@ -67,7 +67,7 @@ export default function RegistrationForm({ className = "" }: Props) {
           "service_0kuce38",
           "template_2xekuv6",
           e.target,
-          "peXEQ-b1oFp3uAQvI"
+          "user_2tNsUaIQSULo6wFXKZVCs"
         )
         .then(
           (result) => {
