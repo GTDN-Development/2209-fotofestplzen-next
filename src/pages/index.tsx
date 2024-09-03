@@ -3,6 +3,7 @@ import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import Aftermovie from "@components/home/Aftermovie";
 import Contact from "@components/home/Contact";
+import Exhibitors from "@components/home/Exhibitors";
 import Faq from "@components/home/Faq";
 import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
@@ -81,7 +82,7 @@ const Home: NextPage = () => {
         <Guests className="mt-20 md:mt-36" />
       </Wrapper> */}
 
-      {/* <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
+      <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
             <MainHeading level={2} size="2xl">
@@ -95,11 +96,11 @@ const Home: NextPage = () => {
           >
             Přijď si vyzkoušet techniku těchto značek, omrknout novinky a
             poradit se s výběrem nového kousku.
-          </SlideUp> */}
-      {/* <PendingContent className="mt-16 w-full md:mt-28" /> */}
-      {/* <Exhibitors />
+          </SlideUp>
+          {/* <PendingContent className="mt-16 w-full md:mt-28" /> */}
+          <Exhibitors />
         </div>
-      </Wrapper> */}
+      </Wrapper>
 
       {/* <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>

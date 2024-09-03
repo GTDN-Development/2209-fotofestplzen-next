@@ -5,7 +5,7 @@ export const mainRoutes = [
   // },
   // {
   //   label: "Program a registrace",
-  //   path: "/#program",
+  //   path: "/program",
   // },
   // {
   //   label: "Registrace pro firmy",

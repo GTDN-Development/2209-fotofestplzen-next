@@ -51,36 +51,57 @@ const exhibitors = [
     height: "46",
     wrapperClassName: "h-[64px] w-[140px]",
   },
-  {
-    src: "/logos/brands/manfortto.svg",
-    alt: "Logo Manfortto",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[140px]",
-  },
-  // 2023
-  {
-    src: "/logos/brands/benq.svg",
-    alt: "Logo BenQ",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[130px]",
-  },
-  // 2023
-  {
-    src: "/logos/brands/colorama.svg",
-    alt: "Logo Colorama",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[180px]",
-  },
   // {
-  //   src: "/logos/brands/focus-nordic.svg",
-  //   alt: "Logo Focus Nordic",
+  //   src: "/logos/brands/manfortto.svg",
+  //   alt: "Logo Manfortto",
   //   width: "128",
   //   height: "46",
   //   wrapperClassName: "h-[64px] w-[140px]",
   // },
+  // 2023
+  // {
+  //   src: "/logos/brands/benq.svg",
+  //   alt: "Logo BenQ",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[130px]",
+  // },
+  // 2023
+  // {
+  //   src: "/logos/brands/colorama.svg",
+  //   alt: "Logo Colorama",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[180px]",
+  // },
+  {
+    src: "/logos/brands/focus-nordic.svg",
+    alt: "Logo Focus Nordic",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[140px]",
+  },
+  {
+    src: "/logos/brands/eizo.svg",
+    alt: "Logo Eizo",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[140px]",
+  },
+  {
+    src: "/logos/brands/sigma.svg",
+    alt: "Logo Sigma",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[140px]",
+  },
+  {
+    src: "/logos/brands/histogram.svg",
+    alt: "Logo Histogram",
+    width: "128",
+    height: "46",
+    wrapperClassName: "h-[64px] w-[140px]",
+  },
   // {
   //   src: "/logos/brands/irix.svg",
   //   alt: "Logo Irix",
@@ -88,13 +109,13 @@ const exhibitors = [
   //   height: "46",
   //   wrapperClassName: "h-[64px] w-[140px]",
   // },
-  {
-    src: "/logos/brands/3lt.svg",
-    alt: "Logo 3 Legged Thing",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[160px]",
-  },
+  // {
+  //   src: "/logos/brands/3lt.svg",
+  //   alt: "Logo 3 Legged Thing",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[160px]",
+  // },
   // {
   //   src: "/logos/brands/kvalitni-fotky.svg",
   //   alt: "Logo Kvalitní fotky",
@@ -109,43 +130,43 @@ const exhibitors = [
   //   height: "46",
   //   wrapperClassName: "h-[64px] w-[160px]",
   // },
-  {
-    src: "/logos/brands/avenger.svg",
-    alt: "Logo Avenger",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[160px]",
-  },
-  {
-    src: "/logos/brands/joby.svg",
-    alt: "Logo Joby",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[140px]",
-  },
-  {
-    src: "/logos/brands/lowepro.svg",
-    alt: "Logo Lowepro",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[140px]",
-  },
+  // {
+  //   src: "/logos/brands/avenger.svg",
+  //   alt: "Logo Avenger",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[160px]",
+  // },
+  // {
+  //   src: "/logos/brands/joby.svg",
+  //   alt: "Logo Joby",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[140px]",
+  // },
+  // {
+  //   src: "/logos/brands/lowepro.svg",
+  //   alt: "Logo Lowepro",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[140px]",
+  // },
   // 2023
-  {
-    src: "/logos/brands/fotobatohy-cz.svg",
-    alt: "Logo Fujifilm",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[160px]",
-  },
+  // {
+  //   src: "/logos/brands/fotobatohy-cz.svg",
+  //   alt: "Logo Fujifilm",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[160px]",
+  // },
   // 2023
-  {
-    src: "/logos/brands/jupio.svg",
-    alt: "Logo Jupio",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[140px]",
-  },
+  // {
+  //   src: "/logos/brands/jupio.svg",
+  //   alt: "Logo Jupio",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[140px]",
+  // },
   // 2023
   {
     src: "/logos/brands/sekonic.svg",
@@ -155,21 +176,13 @@ const exhibitors = [
     wrapperClassName: "h-[64px] w-[160px]",
   },
   // 2023
-  {
-    src: "/logos/brands/dicapac.svg",
-    alt: "Logo Dicapac",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[140px]",
-  },
-  // 2022
-  {
-    src: "/logos/brands/view-sonic.svg",
-    alt: "Logo ViewSonic",
-    width: "128",
-    height: "46",
-    wrapperClassName: "h-[64px] w-[160px]",
-  },
+  // {
+  //   src: "/logos/brands/dicapac.svg",
+  //   alt: "Logo Dicapac",
+  //   width: "128",
+  //   height: "46",
+  //   wrapperClassName: "h-[64px] w-[140px]",
+  // },
 ];
 
 export default function Exhibitors() {
