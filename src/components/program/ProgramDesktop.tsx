@@ -30,7 +30,7 @@ export default function ProgramDesktop({
             color="primary"
             weight="medium"
           >
-            Hlavní stage
+            Horní stage
           </Heading>
         </div>
         <div className="flex flex-col gap-3 text-left">
@@ -52,7 +52,7 @@ export default function ProgramDesktop({
             color="primary"
             weight="medium"
           >
-            Venkovní stage 1
+            Workshop zóna
           </Heading>
         </div>
         <div className="flex flex-col gap-3 text-left">
@@ -63,7 +63,7 @@ export default function ProgramDesktop({
             color="primary"
             weight="medium"
           >
-            Venkovní stage 2
+            Meeting point
           </Heading>
         </div>
       </div>

@@ -8,6 +8,7 @@ import Faq from "@components/home/Faq";
 import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
+import Program from "@components/program/Program";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
 import { useState } from "react";
@@ -15,6 +16,7 @@ import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { CustomImage, images } from "../configs/images";
+import ProgramDesktop from "@components/program/ProgramDesktop";
 
 // import PendingContent from "@components/home/PendingContent";
 
@@ -102,7 +104,7 @@ const Home: NextPage = () => {
         </div>
       </Wrapper>
 
-      {/* <Wrapper as={"section"} id="program" paddedContent="base">
+      <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
             Program a registrace
@@ -120,19 +122,19 @@ const Home: NextPage = () => {
           <br />
           Na workshopy se i letos budeš muset registrovat nebo si na něj
           zakoupit vstupenku, záleží na jaký půjdeš.
-        </SlideUp> */}
-      {/* <PendingContent className="mt-20 md:mt-36" /> */}
-      {/* <Alert
+        </SlideUp>
+        {/* <PendingContent className="mt-20 md:mt-36" /> */}
+        {/* <Alert
           status="info"
           variant="filled"
           hasIcon={true}
           title="Výběr stage"
           text="Stage lze horizontálně posouvat. Pro zobrazení programu z jiné stage stačí najet a kliknout na jinou."
           className="mt-10 block text-primary sm:mt-0 sm:hidden"
-        />
-        <Program className="mt-10 sm:mt-20" />
+        /> */}
+        <Program />
         <ProgramDesktop className="mt-36" />
-      </Wrapper> */}
+      </Wrapper>
 
       <Wrapper className="pt-20">
         <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
