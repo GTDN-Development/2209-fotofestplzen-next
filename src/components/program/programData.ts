@@ -259,7 +259,7 @@ export const outdoor2 = [
   },
   {
     id: 3,
-    speaker: "Peakdesign | Jan Březina a Irma Březina",
+    speaker: "Peakdesign | Jan a Irma Březina",
     category: "Workshop",
     name: "Světlo a postava",
     time: "12:30 - 13:30",
