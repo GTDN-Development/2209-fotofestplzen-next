@@ -55,7 +55,7 @@ export const mainStage = [
     id: 5,
     speaker: "Canon",
     category: "Přednáška",
-    name: "EOS R systémem",
+    name: "Focení portrétu s EOS R systémem",
     time: "15:45 - 16:30",
     hasRegistration: false,
     isPaid: false,
