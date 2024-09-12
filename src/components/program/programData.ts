@@ -121,7 +121,7 @@ export const cafe = [
   },
   {
     id: 4,
-    speaker: "Domes",
+    speaker: "Dominik a Michaela Beránek",
     category: "Přednáška",
     name: "Tvorba contentu a správa IG",
     time: "14:00 - 14:30",
@@ -246,7 +246,7 @@ export const outdoor2 = [
   },
   {
     id: 2,
-    speaker: "Dominik a Michaela Beránek",
+    speaker: "Domes",
     category: "Workshop",
     name: "Photosession",
     time: "11:45 - 12:45",

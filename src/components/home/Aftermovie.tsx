@@ -40,7 +40,7 @@ export default function Aftermovie() {
         </div>
       </button>
       <span className="pt-8 text-xs font-medium uppercase tracking-wider">
-        Foto Fest Plzeň 2024 aftermovie
+        Foto Fest Plzeň 2023 aftermovie
       </span>
 
       {/* Samotný modal */}

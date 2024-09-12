@@ -18,7 +18,7 @@ const questionsAnswers = [
   {
     id: 4,
     question: "Kdy a kde bude Foto Fest probíhat?",
-    answer: "6. října 2024 od 10 hodin v Plzeňské Papírně.",
+    answer: "6. října 2024 od 10 hodin v plzeňské Papírně.",
   },
   {
     id: 5,
