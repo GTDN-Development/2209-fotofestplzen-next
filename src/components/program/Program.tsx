@@ -10,7 +10,7 @@ type Props = {
 const stagesTabs = [
   {
     id: 1,
-    headline: "Hlavní stage",
+    headline: "Horní stage",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
@@ -22,13 +22,13 @@ const stagesTabs = [
   },
   {
     id: 3,
-    headline: "Venkovní stage 1",
+    headline: "Workshop zóna",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },
   {
     id: 4,
-    headline: "Venkovní stage 2",
+    headline: "Meeting point",
     caption:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,dolorum.",
   },

@@ -3,10 +3,14 @@ export const mainRoutes = [
   //   label: "Hosté",
   //   path: "/#hoste",
   // },
-  // {
-  //   label: "Program a registrace",
-  //   path: "/program",
-  // },
+  {
+    label: "Hlavní strana",
+    path: "/",
+  },
+  {
+    label: "Program a registrace",
+    path: "/program",
+  },
   // {
   //   label: "Registrace pro firmy",
   //   path: "/registrace",

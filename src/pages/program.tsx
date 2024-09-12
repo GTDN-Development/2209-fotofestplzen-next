@@ -1,15 +1,10 @@
 import Alert from "@components/Alert";
-import Button from "@components/Button";
-import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Program from "@components/program/Program";
 import ProgramDesktop from "@components/program/ProgramDesktop";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
 // import ExportedImage from "next-image-export-optimizer";
-import Seo from "@components/Seo";
-import Image from "next/image";
-import { HiDownload } from "react-icons/hi";
 
 const ProgramPage: NextPage = () => {
   return (
@@ -46,11 +41,11 @@ const ProgramPage: NextPage = () => {
         <ProgramDesktop hasBackground={false} className="mt-10" />
       </Wrapper>
 
-      <Wrapper as={"section"} id="mapa" paddedContent="base">
+      {/* <Wrapper as={"section"} id="mapa" paddedContent="base">
         <Heading level={2} size="xl" font="display">
           Mapa areálu
         </Heading>
-        {/* <PendingContent className="mt-10 md:mt-20" /> */}
+        <PendingContent className="mt-10 md:mt-20" />
         <p className="mt-10 max-w-2xl text-lg font-medium">
           Kdo hledá, najde! Mrkni na mapku ať víš, kde jsou jednotlivý stage,
           stánky vystavovatelů nebo kam zajít na “vychlazenou Plzeň”!
@@ -65,16 +60,16 @@ const ProgramPage: NextPage = () => {
         >
           Stáhnout mapu areálu
         </Button>
-      </Wrapper>
+      </Wrapper> */}
 
-      <Wrapper size="lg" className="pb-28 md:pb-52">
+      {/* <Wrapper size="lg" className="pb-28 md:pb-52">
         <div className="aspect-video w-full bg-body">
-          {/* <img
+          <img
             src="/images/mapa-arealu-2022-preview.jpg"
             alt="Mapa areálu festivalu"
             className="h-full w-full object-cover"
             loading="lazy"
-          /> */}
+          />
           <Image
             src={"/images/mapa-arealu-2022-preview.jpg"}
             alt={"Mapa areálu festivalu"}
@@ -84,7 +79,7 @@ const ProgramPage: NextPage = () => {
             loading="lazy"
           />
         </div>
-      </Wrapper>
+      </Wrapper> */}
     </>
   );
 };

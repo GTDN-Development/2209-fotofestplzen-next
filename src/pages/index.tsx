@@ -8,6 +8,8 @@ import Faq from "@components/home/Faq";
 import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
+import Program from "@components/program/Program";
+import ProgramDesktop from "@components/program/ProgramDesktop";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
 import { useState } from "react";
@@ -63,7 +65,6 @@ const Home: NextPage = () => {
       <Wrapper as={"section"} id="aftermovie" size="lg" paddedContent="none">
         <Aftermovie />
       </Wrapper>
-
       {/* <Wrapper as={"section"} id="hoste" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
@@ -81,7 +82,6 @@ const Home: NextPage = () => {
         <PendingContent className="mt-20 md:mt-36" />
         <Guests className="mt-20 md:mt-36" />
       </Wrapper> */}
-
       <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
@@ -101,8 +101,7 @@ const Home: NextPage = () => {
           <Exhibitors />
         </div>
       </Wrapper>
-
-      {/* <Wrapper as={"section"} id="program" paddedContent="base">
+      <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
             Program a registrace
@@ -120,38 +119,35 @@ const Home: NextPage = () => {
           <br />
           Na workshopy se i letos budeš muset registrovat nebo si na něj
           zakoupit vstupenku, záleží na jaký půjdeš.
-        </SlideUp> */}
-      {/* <PendingContent className="mt-20 md:mt-36" /> */}
-      {/* <Alert
+        </SlideUp>
+        {/* <PendingContent className="mt-20 md:mt-36" /> */}
+        {/* <Alert
           status="info"
           variant="filled"
           hasIcon={true}
           title="Výběr stage"
           text="Stage lze horizontálně posouvat. Pro zobrazení programu z jiné stage stačí najet a kliknout na jinou."
           className="mt-10 block text-primary sm:mt-0 sm:hidden"
-        />
-        <Program className="mt-10 sm:mt-20" />
+        /> */}
+        <Program />
         <ProgramDesktop className="mt-36" />
-      </Wrapper> */}
-
-      <Wrapper className="pt-20">
-        <p className="max-w-[45ch] font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
-          Přípravy letošního ročníku jsou v plném proudu. 💪 <br /> I&nbsp;letos
-          pro vás chystáme nabitý program plný přednášek a workshopů a těšit se
-          můžete i na testování techniky. 📸
+      </Wrapper>
+      {/* <Wrapper className="pt-20">
+        <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
+          Přípravy letošního ročníku jsou v plném proudu. 💪 I letos pro vás
+          chystáme nabitý program plný přednášek a workshopů a těšit se můžete i
+          na testování techniky. 📸
           <br />
           <br />
           Vstup na festival bude opět zdarma. <br /> Nezapomeňte nás sledovat
           aby vám neutekly novinky a program.
         </p>
-      </Wrapper>
-
+      </Wrapper> */}
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
         <SlideUp>
           <Newsletter />
         </SlideUp>
       </Wrapper>
-
       <section>
         <Wrapper className="pt-12 lg:pt-10">
           <SlideUp className="flex w-full items-center justify-center">
@@ -167,9 +163,7 @@ const Home: NextPage = () => {
           </div>
         </Wrapper>
       </section>
-
       <Contact />
-
       <Wrapper
         as={"section"}
         id="faq"
@@ -194,7 +188,6 @@ const Home: NextPage = () => {
           <Faq />
         </div>
       </Wrapper>
-
       {/* <Wrapper as={"section"} size="lg" id="faq" paddedContent="base">
         <div className="relative flex w-full flex-col items-center justify-center gap-7 overflow-hidden rounded-2xl p-4 sm:aspect-video sm:gap-16 md:p-10">
           <Image
@@ -219,7 +212,6 @@ const Home: NextPage = () => {
           </a>
         </div>
       </Wrapper> */}
-
       <Wrapper
         as={"section"}
         id="vystavovatele"

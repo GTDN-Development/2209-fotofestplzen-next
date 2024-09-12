@@ -1,5 +1,4 @@
 import Heading from "@components/Heading";
-import RegistrationModal from "@components/program/RegistrationModal";
 
 type Props = {
   speaker: string;
@@ -42,13 +41,11 @@ export default function ProgramCard({
       <span className="text-center text-lg leading-tight tracking-widest text-gray-400">
         {time}
       </span>
-
       {optionalMessage && (
         <span className="block text-center text-warning">
           {optionalMessage}
         </span>
       )}
-
       {/* Při vydaném programu - během festivalu */}
       {/* {hasRegistration ? (
         <span className="block text-center text-warning">
@@ -57,11 +54,15 @@ export default function ProgramCard({
       ) : (
         <span className="block text-center text-info">Volně přístupné</span>
       )} */}
-
       {/* Při spuetěných registracích v programu */}
-      {hasRegistration && !isPaid && !isFull && <RegistrationModal />}
+      {/* {hasRegistration && !isPaid && !isFull && <RegistrationModal />}
       {hasRegistration && isPaid && !isFull && (
         <RegistrationModal price={price} />
+      )} */}
+      {hasRegistration && (
+        <span className="block text-center text-emerald-600">
+          Registrace budou spuštěny <br /> 19. 9. v 19:00
+        </span>
       )}
       {/* {hasRegistration && isPaid && !isFull && (
         <a
