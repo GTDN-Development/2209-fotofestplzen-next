@@ -35,7 +35,7 @@ export const socials = [
     icon: FaInstagram,
   },
   {
-    link: "https://www.youtube.com/channel/UCrYPov9Ll5Tyfafq8HW5eHg",
+    link: "https://www.youtube.com/@fotofestplzen",
     ariaLabel: "odkaz na youtube",
     icon: FaYoutube,
   },
