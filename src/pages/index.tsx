@@ -132,8 +132,7 @@ const Home: NextPage = () => {
         <Program />
         <ProgramDesktop className="mt-36" />
       </Wrapper>
-      x
-      <Wrapper className="pt-20">
+      {/* <Wrapper className="pt-20">
         <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
           Přípravy letošního ročníku jsou v plném proudu. 💪 I letos pro vás
           chystáme nabitý program plný přednášek a workshopů a těšit se můžete i
@@ -143,7 +142,7 @@ const Home: NextPage = () => {
           Vstup na festival bude opět zdarma. Nezapomeňte nás sledovat aby vám
           neutekly novinky a program.
         </p>
-      </Wrapper>
+      </Wrapper> */}
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
         <SlideUp>
           <Newsletter />

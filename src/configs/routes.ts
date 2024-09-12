@@ -4,6 +4,10 @@ export const mainRoutes = [
   //   path: "/#hoste",
   // },
   {
+    label: "Hlavní strana",
+    path: "/",
+  },
+  {
     label: "Program a registrace",
     path: "/program",
   },
