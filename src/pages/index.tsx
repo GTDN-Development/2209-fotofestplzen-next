@@ -9,6 +9,7 @@ import Hero from "@components/home/Hero";
 import Newsletter from "@components/home/Newsletter";
 import Partners from "@components/home/Partners";
 import Program from "@components/program/Program";
+import ProgramDesktop from "@components/program/ProgramDesktop";
 import SlideUp from "@components/scroll-reveal/SlideUp";
 import type { NextPage } from "next";
 import { useState } from "react";
@@ -16,7 +17,6 @@ import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { CustomImage, images } from "../configs/images";
-import ProgramDesktop from "@components/program/ProgramDesktop";
 
 // import PendingContent from "@components/home/PendingContent";
 
@@ -65,7 +65,6 @@ const Home: NextPage = () => {
       <Wrapper as={"section"} id="aftermovie" size="lg" paddedContent="none">
         <Aftermovie />
       </Wrapper>
-
       {/* <Wrapper as={"section"} id="hoste" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
@@ -83,7 +82,6 @@ const Home: NextPage = () => {
         <PendingContent className="mt-20 md:mt-36" />
         <Guests className="mt-20 md:mt-36" />
       </Wrapper> */}
-
       <Wrapper as={"section"} id="vystavovatele" paddedContent="base">
         <div className="flex flex-col items-center justify-center">
           <SlideUp>
@@ -103,7 +101,6 @@ const Home: NextPage = () => {
           <Exhibitors />
         </div>
       </Wrapper>
-
       <Wrapper as={"section"} id="program" paddedContent="base">
         <SlideUp>
           <MainHeading level={2} size="2xl">
@@ -135,7 +132,7 @@ const Home: NextPage = () => {
         <Program />
         <ProgramDesktop className="mt-36" />
       </Wrapper>
-
+      x
       <Wrapper className="pt-20">
         <p className="font-display text-3xl font-normal uppercase leading-[1.4] text-white lg:text-5xl">
           Přípravy letošního ročníku jsou v plném proudu. 💪 I letos pro vás
@@ -147,13 +144,11 @@ const Home: NextPage = () => {
           neutekly novinky a program.
         </p>
       </Wrapper>
-
       <Wrapper as={"section"} id="newsletter" paddedContent="base">
         <SlideUp>
           <Newsletter />
         </SlideUp>
       </Wrapper>
-
       <section>
         <Wrapper className="pt-12 lg:pt-10">
           <SlideUp className="flex w-full items-center justify-center">
@@ -169,9 +164,7 @@ const Home: NextPage = () => {
           </div>
         </Wrapper>
       </section>
-
       <Contact />
-
       <Wrapper
         as={"section"}
         id="faq"
@@ -196,7 +189,6 @@ const Home: NextPage = () => {
           <Faq />
         </div>
       </Wrapper>
-
       {/* <Wrapper as={"section"} size="lg" id="faq" paddedContent="base">
         <div className="relative flex w-full flex-col items-center justify-center gap-7 overflow-hidden rounded-2xl p-4 sm:aspect-video sm:gap-16 md:p-10">
           <Image
@@ -221,7 +213,6 @@ const Home: NextPage = () => {
           </a>
         </div>
       </Wrapper> */}
-
       <Wrapper
         as={"section"}
         id="vystavovatele"

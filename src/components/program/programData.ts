@@ -246,6 +246,19 @@ export const outdoor2 = [
   },
   {
     id: 2,
+    speaker: "Dominik Beránek",
+    category: "Workshop",
+    name: "Photosession",
+    time: "11:45 - 12:45",
+    hasRegistration: true,
+    isPaid: false,
+    price: "0 Kč",
+    isFull: false,
+    shopLink: "#",
+    optionalMessage: "",
+  },
+  {
+    id: 3,
     speaker: "Peakdesign | Jan Březina a Irma Březinová",
     category: "Workshop",
     name: "Světlo a postava",
@@ -258,7 +271,7 @@ export const outdoor2 = [
     optionalMessage: "",
   },
   {
-    id: 3,
+    id: 4,
     speaker: 'Lukáš "Kenji" Vrábel',
     category: "Workshop",
     name: "Párové focení: Tipy a triky pro nezapomenutelné momenty",
@@ -271,7 +284,7 @@ export const outdoor2 = [
     optionalMessage: "",
   },
   {
-    id: 4,
+    id: 5,
     speaker: "Sony | Jan Tichý",
     category: "Workshop",
     name: "Portrét s umělým světlem s Janem Tichým",
@@ -284,7 +297,7 @@ export const outdoor2 = [
     optionalMessage: "",
   },
   {
-    id: 5,
+    id: 6,
     speaker: "Canon",
     category: "Workshop",
     name: "Focení portrétů s EOS R systémem",
