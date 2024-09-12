@@ -2,6 +2,7 @@ import Alert from "@components/Alert";
 import MainHeading from "@components/MainHeading";
 import Program from "@components/program/Program";
 import ProgramDesktop from "@components/program/ProgramDesktop";
+import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
 // import ExportedImage from "next-image-export-optimizer";
