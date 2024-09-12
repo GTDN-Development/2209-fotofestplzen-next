@@ -27,7 +27,7 @@ export const mainStage = [
   },
   {
     id: 3,
-    speaker: "Mockup space",
+    speaker: "MOCUP.SPACE",
     category: "Přednáška",
     name: "Nekonečná inspirace: Jak nevyhořet v kreativě, motivace a balance",
     time: "13:00 - 14:00",
@@ -147,9 +147,9 @@ export const cafe = [
   },
   {
     id: 6,
-    speaker: "",
+    speaker: "BIKES ON FILM",
     category: "Přednáška",
-    name: "Náhlédnutí do zakulisí audiovizuálního studia BIKES ON FILM + Q&A",
+    name: "Nahlédnutí do zákulisí audiovizuálního studia + Q&A",
     time: "16:00 - 17:00",
     hasRegistration: false,
     isPaid: false,
@@ -246,7 +246,7 @@ export const outdoor2 = [
   },
   {
     id: 2,
-    speaker: "Dominik Beránek",
+    speaker: "Dominik a Michaela Beránek",
     category: "Workshop",
     name: "Photosession",
     time: "11:45 - 12:45",
@@ -259,7 +259,7 @@ export const outdoor2 = [
   },
   {
     id: 3,
-    speaker: "Peakdesign | Jan Březina a Irma Březinová",
+    speaker: "Peakdesign | Jan Březina a Irma Březina",
     category: "Workshop",
     name: "Světlo a postava",
     time: "12:30 - 13:30",
