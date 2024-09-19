@@ -112,9 +112,9 @@ const Home: NextPage = () => {
           delay="200"
           className="mt-8 max-w-prose text-lg font-medium"
         >
-          I letos se držíme osvědčené taktiky, program bude složený z přednášek
-          a workshopů na dvou vnitřních a dvou venkovních stagích. Přednášky,
-          stejně jako minule, budou volně přístupné pro všechny návštěvníky.
+          I letos se držíme osvědčené taktiky, program je složený z přednášek a
+          workshopů na třech vnitřních a jedné venkovní stagi. Přednášky, stejně
+          jako minule, budou volně přístupné pro všechny návštěvníky.
           <br />
           <br />
           Na workshopy se i letos budeš muset registrovat nebo si na něj
@@ -139,8 +139,8 @@ const Home: NextPage = () => {
           na testování techniky. 📸
           <br />
           <br />
-          Vstup na festival bude opět zdarma. Nezapomeňte nás sledovat aby vám
-          neutekly novinky a program.
+          Vstup na festival bude opět zdarma. <br /> Nezapomeňte nás sledovat
+          aby vám neutekly novinky a program.
         </p>
       </Wrapper> */}
       <Wrapper as={"section"} id="newsletter" paddedContent="base">

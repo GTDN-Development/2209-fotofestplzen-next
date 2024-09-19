@@ -61,7 +61,7 @@ export default function ProgramCard({
       )} */}
       {hasRegistration && (
         <span className="block text-center text-emerald-600">
-          Registrace budou spuštěny <br /> 19. 9. v 19:00
+          Registrace budou spuštěny <br /> 19. 9. ve 20:00
         </span>
       )}
       {/* {hasRegistration && isPaid && !isFull && (
@@ -75,7 +75,8 @@ export default function ProgramCard({
       )} */}
       {isFull && (
         <span className="block text-center text-error">
-          Kapacita naplněna - již se nelze registrovat
+          {/* Kapacita naplněna - již se nelze registrovat */}
+          {/* Registrace uzavřeny */}
         </span>
       )}
       {!hasRegistration && !isPaid && (

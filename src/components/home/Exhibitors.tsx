@@ -124,13 +124,6 @@ const exhibitors = [
   //   wrapperClassName: "h-[64px] w-[160px]",
   // },
   // {
-  //   src: "/logos/brands/view-sonic.svg",
-  //   alt: "Logo ViewSonic",
-  //   width: "128",
-  //   height: "46",
-  //   wrapperClassName: "h-[64px] w-[160px]",
-  // },
-  // {
   //   src: "/logos/brands/leicaklub.svg",
   //   alt: "Logo Leica Klub",
   //   width: "128",
