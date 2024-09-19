@@ -23,7 +23,7 @@ export default function RegistrationModal({ price }: { price?: string }) {
           onClick={openModal}
           className="c-link-3-a text-primary focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
         >
-          {`Registrovat se ${price ? `za ${price}` : "zdarma"}`}
+          {`Registrovat se ${price ? `- ${price}` : "zdarma"}`}
         </button>
       </div>
 

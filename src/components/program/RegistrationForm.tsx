@@ -148,7 +148,7 @@ export default function RegistrationForm({ className = "" }: Props) {
           <Fragment key={i}>
             <option
               disabled={workshop.isFull}
-              className=" disabled:opacity-50"
+              className="disabled:opacity-50"
               value={`${
                 workshop.speaker +
                 " - " +

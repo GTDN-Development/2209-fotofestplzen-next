@@ -1,4 +1,5 @@
 import Heading from "@components/Heading";
+import RegistrationModal from "./RegistrationModal";
 
 type Props = {
   speaker: string;
@@ -55,15 +56,15 @@ export default function ProgramCard({
         <span className="block text-center text-info">Volně přístupné</span>
       )} */}
       {/* Při spuetěných registracích v programu */}
-      {/* {hasRegistration && !isPaid && !isFull && <RegistrationModal />}
+      {hasRegistration && !isPaid && !isFull && <RegistrationModal />}
       {hasRegistration && isPaid && !isFull && (
         <RegistrationModal price={price} />
-      )} */}
-      {hasRegistration && (
+      )}
+      {/* {hasRegistration && (
         <span className="block text-center text-emerald-600">
           Registrace budou spuštěny <br /> 19. 9. ve 20:00
         </span>
-      )}
+      )} */}
       {/* {hasRegistration && isPaid && !isFull && (
         <a
           href={shopLink}
@@ -75,7 +76,7 @@ export default function ProgramCard({
       )} */}
       {isFull && (
         <span className="block text-center text-error">
-          {/* Kapacita naplněna - již se nelze registrovat */}
+          Kapacita naplněna - již se nelze registrovat
           {/* Registrace uzavřeny */}
         </span>
       )}
