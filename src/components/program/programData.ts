@@ -21,7 +21,7 @@ export const mainStage = [
     hasRegistration: false,
     isPaid: false,
     price: "0 Kč",
-    isFull: false,
+    isFull: true,
     shopLink: "#",
     optionalMessage: "",
   },
