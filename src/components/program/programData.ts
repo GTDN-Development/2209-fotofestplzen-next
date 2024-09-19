@@ -253,7 +253,7 @@ export const outdoor2 = [
     hasRegistration: true,
     isPaid: false,
     price: "0 Kč",
-    isFull: true,
+    isFull: false,
     shopLink: "#",
     optionalMessage: "",
   },
