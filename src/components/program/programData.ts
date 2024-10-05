@@ -55,7 +55,7 @@ export const mainStage = [
     id: 5,
     speaker: "Canon",
     category: "Přednáška",
-    name: "Focení portrétu s EOS R systémem",
+    name: "TECHNOLOGIE CANON V PRAXI S Pavlem Šerým nejen o umělé inteligenci, duálních pixelech a novém přístupu k optice",
     time: "15:45 - 16:30",
     hasRegistration: false,
     isPaid: false,
