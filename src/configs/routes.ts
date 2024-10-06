@@ -8,7 +8,7 @@ export const mainRoutes = [
     path: "/",
   },
   {
-    label: "Program a registrace",
+    label: "Program a mapa",
     path: "/program",
   },
   // {

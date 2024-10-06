@@ -1,10 +1,14 @@
 import Alert from "@components/Alert";
+import Button from "@components/Button";
+import Heading from "@components/Heading";
 import MainHeading from "@components/MainHeading";
 import Program from "@components/program/Program";
 import ProgramDesktop from "@components/program/ProgramDesktop";
 import Seo from "@components/Seo";
 import Wrapper from "@components/Wrapper";
 import type { NextPage } from "next";
+import Image from "next/image";
+import { HiDownload } from "react-icons/hi";
 // import ExportedImage from "next-image-export-optimizer";
 
 const ProgramPage: NextPage = () => {
@@ -42,45 +46,52 @@ const ProgramPage: NextPage = () => {
         <ProgramDesktop hasBackground={false} className="mt-10" />
       </Wrapper>
 
-      {/* <Wrapper as={"section"} id="mapa" paddedContent="base">
+      <Wrapper as={"section"} id="mapa" paddedContent="base">
         <Heading level={2} size="xl" font="display">
           Mapa areálu
         </Heading>
-        <PendingContent className="mt-10 md:mt-20" />
+        {/* <PendingContent className="mt-10 md:mt-20" /> */}
         <p className="mt-10 max-w-2xl text-lg font-medium">
           Kdo hledá, najde! Mrkni na mapku ať víš, kde jsou jednotlivý stage,
           stánky vystavovatelů nebo kam zajít na “vychlazenou Plzeň”!
         </p>
         <Button
           as="a"
-          href="/images/mapa-arealu-2022-download.png"
+          href="/images/mapa-2024/foto-fest-plzen-2024-mapa.pdf"
           download
           leftIcon={<HiDownload />}
           className="mt-10"
           size="lg"
         >
-          Stáhnout mapu areálu
+          Stáhnout mapu (PDF)
         </Button>
-      </Wrapper> */}
+      </Wrapper>
 
-      {/* <Wrapper size="lg" className="pb-28 md:pb-52">
-        <div className="aspect-video w-full bg-body">
-          <img
-            src="/images/mapa-arealu-2022-preview.jpg"
-            alt="Mapa areálu festivalu"
-            className="h-full w-full object-cover"
-            loading="lazy"
-          />
+      <Wrapper
+        size="lg"
+        className="flex flex-col items-stretch justify-start gap-10 pb-28 md:pb-52"
+      >
+        <div className="aspect-video w-full overflow-hidden rounded-2xl border-4 bg-body">
           <Image
-            src={"/images/mapa-arealu-2022-preview.jpg"}
-            alt={"Mapa areálu festivalu"}
-            width={1920}
-            height={1080}
+            src={"/images/mapa-2024/prizemi.jpg"}
+            alt={"Mapa areálu festivalu - přízemí"}
+            width={2000}
+            height={1200}
             className="aspect-video h-full w-full object-cover"
             loading="lazy"
           />
         </div>
-      </Wrapper> */}
+        <div className="aspect-video w-full overflow-hidden rounded-2xl border-4 bg-body">
+          <Image
+            src={"/images/mapa-2024/1-patro.jpg"}
+            alt={"Mapa areálu festivalu - 1. patro"}
+            width={2000}
+            height={1200}
+            className="aspect-video h-full w-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </Wrapper>
     </>
   );
 };
